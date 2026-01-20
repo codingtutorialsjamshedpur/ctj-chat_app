@@ -1,5 +1,4 @@
 # ctj-chat_app
-# ctj-chat_app
 CTJ AI is a production-oriented Flutter application that combines an AI-style voice assistant with devotional utilities such as Naam Jaap, alarms, smart notifications, and contextual sound feedback.
 
 This project is built with a strong focus on **clean architecture**, **real-world edge cases**, and **professional user experience**, making it suitable for showcasing advanced Flutter development skills.
