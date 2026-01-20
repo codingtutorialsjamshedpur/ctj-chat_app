@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Weather &amp; Context</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#000000",
+                        "metal-dark": "#1a1a1a",
+                        "metal-light": "#4a4a4a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    boxShadow: {
+                        'inner-metallic': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.1), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5)',
+                        'glow-gold': '0 0 20px -5px rgba(236, 182, 19, 0.3)',
+                    },
+                    backgroundImage: {
+                        'metal-gradient': 'linear-gradient(135deg, #2a2a2a 0%, #111 50%, #2a2a2a 100%)',
+                        'chrome-ring': 'conic-gradient(from 180deg at 50% 50%, #333 0deg, #666 45deg, #111 90deg, #ecb613 135deg, #111 180deg, #555 225deg, #333 270deg, #222 315deg, #333 360deg)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-gold {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mask-linear-fade {
+            mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
+        }
+        @keyframes subtle-breath {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.02); }
+        }
+        .animate-breath {
+            animation: subtle-breath 6s ease-in-out infinite;
+        }
+        @keyframes light-sweep {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .animate-sweep {
+            background-size: 200% 200%;
+            animation: light-sweep 10s linear infinite;
+        }@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-black text-white font-display h-screen w-full overflow-hidden flex flex-col relative selection:bg-primary selection:text-black">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neutral-900/40 rounded-full blur-3xl pointer-events-none z-0"></div>
+<div class="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/5 rounded-full blur-3xl pointer-events-none z-0"></div>
+<div class="relative z-20 flex items-center justify-between px-8 py-6 w-full opacity-60">
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold tracking-[0.2em] text-neutral-500">CLIMATE</span>
+<div class="h-1 w-1 bg-primary rounded-full"></div>
+<span class="text-xs font-bold tracking-widest text-neutral-400">20:42</span>
+</div>
+<div class="flex items-center gap-4 text-neutral-500">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px]">battery_horiz_075</span>
+</div>
+</div>
+<div class="relative flex-1 flex flex-col items-center justify-start w-full z-10 pt-2 pb-12 overflow-y-auto overflow-x-hidden no-scrollbar">
+<div class="flex flex-col items-center gap-1 mb-6 opacity-0 animate-[fadeIn_0.8s_ease-out_forwards]">
+<div class="flex items-center gap-2 text-primary/80 mb-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="text-[10px] tracking-[0.3em] font-bold uppercase">San Francisco, CA</span>
+</div>
+<h1 class="text-3xl font-display font-medium text-white tracking-wide">Partly Cloudy</h1>
+<p class="text-neutral-500 text-xs font-mono mt-1 tracking-widest">H:76° L:62°</p>
+</div>
+<div class="relative group cursor-default scale-100 transition-transform duration-500 mb-8 opacity-0 animate-[fadeIn_0.8s_ease-out_0.2s_forwards]">
+<div class="absolute top-1/2 left-0 -translate-x-full w-32 h-[1px] bg-gradient-to-r from-transparent to-neutral-800"></div>
+<div class="absolute top-1/2 right-0 translate-x-full w-32 h-[1px] bg-gradient-to-l from-transparent to-neutral-800"></div>
+<div class="w-64 h-64 rounded-full bg-chrome-ring p-[3px] shadow-2xl relative">
+<div class="w-full h-full rounded-full bg-black p-[6px] relative">
+<div class="w-full h-full rounded-full bg-[#151515] relative flex flex-col items-center justify-center shadow-inner-metallic overflow-hidden border border-white/5">
+<div class="absolute inset-0 opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px);"></div>
+<div class="absolute inset-2 rounded-full opacity-40" style="background: repeating-conic-gradient(from 0deg, rgba(255,255,255,0.5) 0deg 0.5deg, transparent 0.5deg 6deg);"></div>
+<div class="absolute inset-6 rounded-full rotate-[220deg]" style="background: conic-gradient(from 0deg, #ecb613 0deg 140deg, transparent 140deg 360deg); mask-image: radial-gradient(transparent 65%, black 66%); -webkit-mask-image: radial-gradient(transparent 65%, black 66%); opacity: 0.8; filter: drop-shadow(0 0 4px rgba(236,182,19,0.3));"></div>
+<div class="relative z-10 flex flex-col items-center mt-2">
+<span class="material-symbols-outlined text-neutral-400 mb-1 animate-pulse" style="font-size: 28px; animation-duration: 4s;">cloud</span>
+<span class="text-7xl font-display font-light text-white tracking-tighter ml-2">72<span class="text-2xl align-top text-neutral-500 font-normal">°</span></span>
+<span class="text-[10px] text-primary tracking-[0.2em] font-bold mt-2 border-t border-primary/20 pt-2 w-12 text-center">NOW</span>
+</div>
+</div>
+</div>
+<div class="absolute top-4 left-10 w-24 h-12 bg-white/10 blur-xl rounded-full -rotate-45 pointer-events-none mix-blend-overlay"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 w-full max-w-[340px] px-4 mb-10 opacity-0 animate-[fadeIn_0.8s_ease-out_0.4s_forwards]">
+<div class="flex flex-col items-center gap-3">
+<div class="w-28 h-28 rounded-full bg-chrome-ring p-[2px] shadow-lg relative">
+<div class="w-full h-full rounded-full bg-black p-[3px]">
+<div class="w-full h-full rounded-full bg-[#1a1a1a] shadow-inner-metallic flex flex-col items-center justify-center relative border border-white/5">
+<div class="absolute inset-1 rounded-full opacity-30" style="background: repeating-conic-gradient(from 0deg, rgba(255,255,255,0.5) 0deg 0.5deg, transparent 0.5deg 10deg);"></div>
+<div class="absolute inset-2 rounded-full rotate-[180deg]" style="background: conic-gradient(from 0deg, #ecb613 0deg 100deg, transparent 100deg 360deg); mask-image: radial-gradient(transparent 60%, black 61%); -webkit-mask-image: radial-gradient(transparent 60%, black 61%); opacity: 0.6;"></div>
+<span class="material-symbols-outlined text-primary text-[20px] mb-0">humidity_percentage</span>
+<span class="text-xl font-display text-white mt-1">45%</span>
+</div>
+</div>
+</div>
+<span class="text-[9px] tracking-[0.2em] text-neutral-500 uppercase font-bold">Humidity</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-28 h-28 rounded-full bg-chrome-ring p-[2px] shadow-lg relative">
+<div class="w-full h-full rounded-full bg-black p-[3px]">
+<div class="w-full h-full rounded-full bg-[#1a1a1a] shadow-inner-metallic flex flex-col items-center justify-center relative border border-white/5">
+<div class="absolute inset-1 rounded-full opacity-30" style="background: repeating-conic-gradient(from 0deg, rgba(255,255,255,0.5) 0deg 0.5deg, transparent 0.5deg 10deg);"></div>
+<div class="absolute inset-2 rounded-full rotate-[180deg]" style="background: conic-gradient(from 0deg, #ecb613 0deg 60deg, transparent 60deg 360deg); mask-image: radial-gradient(transparent 60%, black 61%); -webkit-mask-image: radial-gradient(transparent 60%, black 61%); opacity: 0.6;"></div>
+<span class="material-symbols-outlined text-primary text-[20px] mb-0">air</span>
+<span class="text-xl font-display text-white mt-1">8<span class="text-xs text-neutral-500 ml-0.5">mph</span></span>
+</div>
+</div>
+</div>
+<span class="text-[9px] tracking-[0.2em] text-neutral-500 uppercase font-bold">Wind NW</span>
+</div>
+</div>
+<div class="w-[90%] max-w-md mt-auto mb-6 relative opacity-0 animate-[fadeIn_0.8s_ease-out_0.6s_forwards]">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neutral-800 to-neutral-900 rounded-2xl blur opacity-30"></div>
+<div class="relative bg-neutral-900/60 border border-white/10 rounded-2xl p-5 backdrop-blur-md shadow-lg">
+<div class="flex items-start gap-4">
+<div class="p-2 bg-primary/10 rounded-full border border-primary/20 shrink-0">
+<span class="material-symbols-outlined text-primary text-sm animate-breath">smart_toy</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Context</h3>
+<p class="text-sm text-neutral-200 font-body leading-relaxed font-light">
+                            Conditions are favorable for your evening commute. Air quality is good. Sunset is at 8:14 PM.
+                        </p>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-3 h-3 border-t border-r border-primary/30 rounded-tr-lg m-2 opacity-50"></div>
+<div class="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-primary/30 rounded-bl-lg m-2 opacity-50"></div>
+</div>
+</div>
+</div>
+
+</body></html>

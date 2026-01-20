@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Send Interaction</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ecb613",
+              "background-light": "#f8f8f6",
+              "background-dark": "#181611", /* Using the darker tone from examples to match "absolute black" request better than the brownish config */
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "body": ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            backgroundImage: {
+                'metal-gradient': 'linear-gradient(145deg, #2a2a2a, #1a1a1a)',
+                'chrome-ring': 'conic-gradient(from 180deg at 50% 50%, #71717a 0deg, #d4d4d8 90deg, #52525b 180deg, #e4e4e7 270deg, #71717a 360deg)',
+                'brushed-metal': 'repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 4px)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom styles for specific Nothing OS / Automotive effects */
+        .dot-matrix-bg {
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(236, 182, 19, 0.6);
+        }
+        .inset-engrave {
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .btn-pressed-metal {
+            background: radial-gradient(circle at 50% 30%, #444, #111);
+            box-shadow: inset 0 4px 10px rgba(0,0,0,0.8);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display overflow-hidden selection:bg-primary selection:text-black">
+<!-- Background Ambient Effects -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<!-- Dot Matrix Texture -->
+<div class="absolute inset-0 dot-matrix-bg opacity-20"></div>
+<!-- Ambient Gold Glow at bottom center -->
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent blur-3xl"></div>
+</div>
+<!-- Top Status Bar (Nothing OS style) -->
+<div class="relative z-10 flex items-center justify-between p-6 pt-8 w-full">
+<div class="flex gap-1">
+<div class="w-1 h-1 bg-white/50 rounded-full"></div>
+<div class="w-1 h-1 bg-white/50 rounded-full"></div>
+<div class="w-1 h-1 bg-white/50 rounded-full"></div>
+</div>
+<div class="text-white/40 text-xs tracking-[0.2em] font-bold">SHOURAV A.I.</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-white/50 text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-white/50 text-[18px]">battery_full</span>
+</div>
+</div>
+<!-- Main Interaction Area -->
+<div class="relative z-10 flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6">
+<!-- Headline State -->
+<div class="mb-12 text-center transform transition-all duration-500">
+<h1 class="text-primary text-[64px] font-bold leading-none tracking-widest text-glow opacity-100">
+                SEND
+            </h1>
+<p class="text-white/30 text-sm font-medium tracking-[0.3em] mt-2 uppercase">Confirming Input</p>
+</div>
+<!-- The Actuator Mechanism -->
+<!-- This represents the "Channel" or "Gear Gate" -->
+<div class="relative">
+<!-- The Track/Slot -->
+<div class="w-28 h-80 rounded-[4rem] bg-[#0a0a0a] border border-white/5 inset-engrave relative flex flex-col items-center justify-end p-2 overflow-hidden backdrop-blur-sm">
+<!-- Track Visuals: Guide Arrows -->
+<div class="absolute top-0 left-0 right-0 h-full flex flex-col items-center justify-start pt-8 pb-24 gap-4 opacity-50">
+<!-- Glowing Arrow Indicating Movement -->
+<div class="w-1 h-16 bg-gradient-to-b from-transparent via-primary/50 to-primary rounded-full animate-pulse"></div>
+<span class="material-symbols-outlined text-primary/80 text-3xl animate-bounce">keyboard_arrow_down</span>
+</div>
+<!-- The Button (Actuator) - Physically displaced to the bottom -->
+<div class="relative group cursor-grab active:cursor-grabbing w-24 h-24 flex-shrink-0 z-20">
+<!-- Compression/Tension Ring (Chrome) -->
+<div class="absolute -inset-1 rounded-full bg-chrome-ring opacity-80 blur-[1px] group-hover:blur-[2px] transition-all duration-300"></div>
+<!-- The Physical Button -->
+<div class="absolute inset-0 rounded-full btn-pressed-metal border-[1px] border-white/10 flex items-center justify-center transform scale-95 transition-transform duration-100">
+<!-- Inner Engraved Details -->
+<div class="w-16 h-16 rounded-full border border-white/5 bg-black/40 flex items-center justify-center shadow-inner">
+<!-- Icon becomes an arrow in this state -->
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-[0_0_8px_rgba(236,182,19,0.8)]">
+                                arrow_downward
+                            </span>
+</div>
+</div>
+<!-- Side Glows (Simulating friction/energy) -->
+<div class="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-8 bg-primary/40 blur-sm rounded-full"></div>
+<div class="absolute -right-2 top-1/2 -translate-y-1/2 w-1 h-8 bg-primary/40 blur-sm rounded-full"></div>
+</div>
+</div>
+<!-- Mechanical connection lines (Decoration) -->
+<div class="absolute top-1/2 -left-12 w-8 h-[1px] bg-gradient-to-r from-transparent to-white/20"></div>
+<div class="absolute top-1/2 -right-12 w-8 h-[1px] bg-gradient-to-l from-transparent to-white/20"></div>
+</div>
+</div>
+<!-- Footer Instructions -->
+<div class="relative z-10 pb-12 pt-6 w-full text-center">
+<div class="flex flex-col items-center gap-3">
+<!-- Visual Indicator Line -->
+<div class="w-px h-8 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
+<p class="text-[#b9b29d] text-sm font-normal leading-normal tracking-wide animate-pulse">
+                Release to confirm
+            </p>
+</div>
+</div>
+<!-- Decorative Corner Elements (Automotive Dashboard Style) -->
+<div class="fixed bottom-8 left-6 pointer-events-none opacity-30">
+<div class="flex gap-1">
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+<div class="w-1 h-1 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="fixed bottom-8 right-6 pointer-events-none opacity-30">
+<div class="text-[10px] text-white font-mono">SYS.READY</div>
+</div>
+</body></html>

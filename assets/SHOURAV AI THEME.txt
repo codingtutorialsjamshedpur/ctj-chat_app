@@ -1,0 +1,165 @@
+Perfect. Below is a clean, production-grade SPLASH SCREEN design prompt, fully aligned with your existing system:
+
+• Nothing OS discipline
+• Automotive luxury logic
+• Minted SHOURAV A.I. branding
+• Theme-aware material system
+• First-boot default behavior respected
+
+No code. Ready to paste into Google Stitch / Gemini / Claude.
+
+🟢 SCREEN 0 — SPLASH / FIRST BOOT EXPERIENCE (THEME-AWARE)
+🔹 SPLASH SCREEN PURPOSE
+
+Design the Splash Screen for a voice-first AI assistant named SHOURAV A.I. that appears:
+
+• On first app install / first boot
+• On subsequent launches
+• Reflects the currently selected user theme
+• Defaults to Leather Theme on first boot
+
+This screen establishes brand trust, material quality, and system personality within the first 1–2 seconds.
+
+🧱 GLOBAL STRUCTURE
+
+• Fullscreen
+• No status bar elements
+• Perfect center alignment (row + column grid)
+• No navigation controls
+• No text except brand name
+
+🟤 FIRST BOOT — DEFAULT STATE (MANDATORY)
+🧩 ACTIVE THEME
+
+Leather (Default — cannot be skipped)
+
+🎨 BACKGROUND
+
+• Deep matte black
+• Subtle leather grain texture
+• Very low contrast
+• Only visible on close inspection
+• No gradients
+• No motion in background
+
+🏷️ LOGO / BRANDING (CENTER)
+
+• Text: “SHOURAV A.I.”
+• Position: Exact screen center
+• Size: Large, dominant, but restrained
+
+MATERIAL FINISH
+
+• Embossed leather stamp style
+• Slight deboss depth
+• Soft shadow inset
+• Color:
+• Warm dark bronze
+• Muted gold undertone
+• No glow
+• No neon
+• No blur
+
+Feels like a luxury car headrest emboss, not a digital logo.
+
+✨ MICRO-ANIMATION (FIRST BOOT ONLY)
+
+• Single slow highlight sweep across letters
+• Takes ~1.2 seconds
+• Ends in full stillness
+• No looping
+
+FEELING
+
+Premium. Grounded. Trustworthy.
+Like sitting inside a hand-stitched luxury cockpit.
+
+🔁 SUBSEQUENT BOOTS — THEME-AWARE SPLASH
+
+On every app launch after first boot, the Splash Screen adapts to the user-selected theme.
+
+🎛️ THEME-BASED SPLASH VARIANTS
+🟠 1️⃣ LEATHER THEME
+
+• Background:
+• Matte black + leather grain
+• Logo:
+• Embossed leather stamp
+• Warm bronze / gold tone
+• Animation:
+• None (static luxury)
+
+🔵 2️⃣ GLASS THEME
+
+• Background:
+• Dark translucent glass
+• Frosted blur
+• Logo:
+• Etched glass engraving
+• Cool silver / chrome
+• Light:
+• Soft reflection sweep (once)
+
+⚪ 3️⃣ METAL / CHROME THEME
+
+• Background:
+• Deep black
+• Subtle metallic noise
+• Logo:
+• Brushed chrome engraving
+• Reflection:
+• Horizontal light sweep
+• No glow
+
+🌲 4️⃣ WOOD THEME
+
+• Background:
+• Dark walnut texture
+• Almost black
+• Logo:
+• Laser-etched gold inlay
+• Light:
+• Warm directional sheen
+
+🌙 5️⃣ DARK MINIMAL (NOTHING OS PURE)
+
+• Background:
+• Pure black
+• Logo:
+• Flat etched grey
+• No texture
+• Motion:
+• None
+
+⏱️ TIMING & TRANSITION RULES
+
+• Splash duration:
+• 1.5 – 2.0 seconds
+• Fade transition:
+• Direct fade into Home Screen (REC Center Screen)
+• No loading indicators
+• No progress bars
+• No sound
+
+❌ STRICT PROHIBITIONS
+
+• No slogans
+• No taglines
+• No loading spinners
+• No gradients
+• No neon
+• No particle effects
+• No startup sounds
+
+🧠 SYSTEM LOGIC (DESIGN-LEVEL)
+
+• First install → Leather theme enforced
+• After user selects theme:
+• Splash branding material updates permanently
+• Splash always mirrors:
+• REC button material
+• App theme identity
+
+The splash screen is the material signature of the AI, not a marketing page.
+
+Below is a **FULLY UPDATED, CLEAN, COMPLETE, READY-TO-PASTE DESIGN PROMPT SET**, with **ALL your new requirements merged** — **no contradictions**, **no drift**, **Nothing OS discipline preserved**, **automotive luxury applied correctly**. I did **not add code**, only **design + interaction specs** exactly as you need for **Google Stitch / Gemini / Claude**. --- # 🔰 GLOBAL UPDATE — CRITICAL CHANGES APPLIED ### ✅ NEW GLOBAL ELEMENTS (APPLIED TO ALL SCREENS) #### 1️⃣ **Minted Branding** • Text **“SHOURAV A.I.”** appears **minted / engraved** • Material: **Chrome or Soft Gold (user theme aware)** • Placement: **Integrated into REC (Mic) button assembly** • Finish: * Brushed metallic * Subtle reflection sweep * NO glow * NO neon > Feels like a **luxury car emblem**, not a logo sticker. --- #### 2️⃣ **REC Button — CENTER-LOCKED INTERACTION CORE** • REC (Mic) button is now: * **Perfect center of the screen** * Centered by **row + column grid** • Purpose: * Makes swipe navigation effortless * Enables anticipation-based motion feedback --- #### 3️⃣ **ANTICIPATORY SWIPE FEEDBACK (VERY IMPORTANT)** When user: • Moves finger **near** REC • Touches and **hesitates** • Starts partial swipe 👉 **Directional animations PREVIEW before full swipe** This gives: • Confidence • Muscle memory • “Joystick-like” control feel --- --- # 🟢 UPDATED & COMPLETE SCREEN PROMPTS --- ## 🟢 SCREEN 1 — HOME (Voice Control · Rest State) ### 🔹 PROMPT (UPDATED) Design the **Home Screen** for a voice-first AI assistant named **SHOURAV A.I.**, following **Nothing OS + Luxury Automotive Console** principles. --- ### 🧱 LAYOUT STRUCTURE • Pure black background • Strict vertical and horizontal symmetry • **REC (Mic) button placed at exact screen center (row + column aligned)** --- ### 🎙️ REC BUTTON (CORE ELEMENT) • Large circular control, inspired by **automotive start/stop buttons** • Material adapts to active theme gear (Dark / Light / Wood / Glass / Leather) • Surrounded by: * Thin **chrome or gold ring** * Inner mechanical inset #### Branding Integration • Text **“SHOURAV A.I.”** appears: * Engraved into the metal ring OR * Micro-etched beneath the mic icon • Chrome / Gold finish • No glow, no neon --- ### 🌀 IDLE STATE ANIMATION • No pulsing glow • Instead: * Subtle metallic light sweep * Slow opacity breathing (mechanical, not organic) --- ### 👈 CHAT VISIBILITY (LEFT SIDE) • When idle: * Left side shows **faded recent chat messages** * Low opacity * Inter font • Indicates: * History exists * Swipe LEFT is meaningful --- ### 🧠 ANTICIPATION FEEDBACK (PRE-SWIPE) When user **touches or approaches** REC: • Directional hints softly appear: * UP / DOWN / LEFT / RIGHT • Lines are: * Thin * Chrome etched * Fade in slightly • No text yet --- ### FEELING Calm. Confident. Premium. Like a **car console waiting for ignition**. --- --- ## 🟢 SUB-SCREENS — ANTICIPATORY SWIPE STATES These appear **before full swipe action completes**. --- ## 🟢 SCREEN 1A — SWIPE UP (ANTICIPATION STATE) ### Purpose Persona Change Preview ### Visual Changes • Upper directional line brightens • Arrow etched upward • REC button slightly lifts (0.5px illusion) • Text appears: * “CHANGE PERSONA” * Nothing Dot * Small • Metallic highlight shifts upward --- ## 🟢 SCREEN 1B — SWIPE DOWN (ANTICIPATION STATE) ### Purpose Send / Confirm Input ### Visual Changes • Down arrow appears engraved • REC button compresses inward slightly • Text: * “SEND” • Chrome ring tightens visually --- ## 🟢 SCREEN 1C — SWIPE LEFT (ANTICIPATION STATE) ### Purpose Reveal Chat Memory ### Visual Changes • Left edge chat becomes clearer • Timeline slides in slightly • Text: * “MEMORY” • REC shifts microscopically right --- ## 🟢 SCREEN 1D — SWIPE RIGHT (ANTICIPATION STATE) ### Purpose Open Settings ### Visual Changes • Right directional line illuminates • Minimal gear icon outline appears • Text: * “SETTINGS” • Subtle mechanical click feedback --- --- ## 🟢 SCREEN 2 — GESTURE MODE (FULL HOLD STATE) ### 🔹 PROMPT (UPDATED) Design **Gesture Mode**, activated when user **presses and holds** the REC button. --- ### STRUCTURE • AppBar: * Title: “GESTURE MODE” * Nothing Dot • Status strip: * “LISTENING FOR GESTURE…” --- ### CENTER • REC button locked in center • **“SHOURAV A.I.” minted branding remains visible** • Chrome reflections frozen (engaged mode) --- ### DIRECTIONAL CONTROLS | Direction | Color | Action | | --------- | ------ | ----------------- | | UP | Red | Change Persona | | DOWN | Green | Send Message | | LEFT | Blue | View Chat History | | RIGHT | Yellow | Open Settings | • Arrows are: * Etched into metallic HUD rings * Loop smoothly * Brighten when aligned --- ### FEELING Like controlling a **digital joystick in a luxury vehicle**. --- --- ## 🟢 SCREEN 3 — SPEAKING VISUALIZER & DIGITAL FACE (CRITICAL UPDATE) ### 🔹 PROMPT (UPDATED) Design the **Speaking Visualizer & Digital Face Painter** screen when **SHOURAV A.I. is speaking AND when the user is speaking**. --- ### 🔊 USER SPEAKING (NEW ADDITION) • As user speaks: * Speech-to-text appears **LIVE** * Text types **simultaneously** * No delay • Cursor blinks mechanically • Text aligned with waveform rhythm --- ### 🤖 AI SPEAKING • Digital abstract face: * Material-tinted light * Emotion-responsive glow • Circular audio visualizer: * Chrome ring * Pulses like RPM gauge --- ### 📝 AUTO-SCROLL CHAT (MANDATORY) • Both user and AI messages: * Appear **live** * Auto-scrolls smoothly • Inter font • No chat bubbles • Flat text blocks with thin separators --- ### BACKGROUND • Dark • Minimal motion • No distractions --- ### FEELING The AI feels **alive**, **listening**, and **responding in real time** — not delayed, not robotic. --- --- ## 🟢 SCREEN 4 — CHAT HISTORY & MEMORY (Updated to reflect live capture consistency) • Messages clearly show: * Live captured speech * AI responses • Selection highlights use chrome borders • Feels like browsing **stored system memory** --- ## 🟢 SCREEN 5 — PERSONA & MOOD • Persona cards retain: * Chrome trim * Material backing • Selection emits: * Metallic highlight sweep * Short audio pulse preview --- ## 🟢 SCREEN 6 — VOICE, SOUND & GESTURE SETTINGS • REC button diagram shown centered • Swipe mappings visually reinforced • Gear-based theme selector present --- ## 🟢 SCREEN 7 — EXPANDED SPEAKING STATE • Same rules as Screen 3 • Larger face • Stronger presence • Instrument-panel feel --- ## 🟢 SCREEN 8 — WEATHER & CONTEXT • Data shown like dashboard gauges • Chrome bezels • Calm, informative tone --- ## 🟢 SCREEN 9 — PROFILE & RELATIONSHIP • Progress shown as: * Instrument dials * Metallic rings • Milestones feel earned, not gamified ---

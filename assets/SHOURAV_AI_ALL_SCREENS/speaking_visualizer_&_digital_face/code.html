@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I.</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#0a0a0a", /* Overriding for the specific deep black requested */
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'metal-gradient': 'linear-gradient(145deg, #2a2a2a, #111111)',
+                        'chrome-ring': 'conic-gradient(from 180deg at 50% 50%, #555555 0deg, #ffffff 50deg, #555555 100deg, #999999 150deg, #ffffff 200deg, #555555 250deg, #333333 360deg)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Utilities for Animation and Specific Styles */
+        .blink-cursor {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .pulse-ring {
+            animation: pulse-gold 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 10px #ecb61320; }
+            50% { box-shadow: 0 0 25px #ecb61360; }
+        }
+
+        .dot-matrix-bg {
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Scrollbar hiding for clean look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display selection:bg-primary selection:text-black overflow-hidden relative">
+<!-- Ambient Background Noise/Texture -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none z-0" data-alt="Subtle noise grain texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRcKuc7xr7PQysZkqZrOBHQvlW54GAYguTADQ3-TX35LPvVi3y0j6QvaBj4Q_bLarubU1VubbfvcX1tLWGP-aAtN20mnaWwoJ9ZsNoVI39eFS3EiOWzUm_gt-vjzFq0Ih9AXhVvPX5towTf_vSIq2SX9QWY9_phJH1WXptUbEIdkF7uva8-Ibyt9TFFtOawNq1rfkw1IsDxpQ2KihbPMFwn73n247UH32kqZqGLU_xnlX5NxIw5vt2rl7FZEaz5JRBWY4oLQJqm5Q");'></div>
+<div class="absolute inset-0 dot-matrix-bg opacity-20 pointer-events-none z-0"></div>
+<!-- Header -->
+<header class="relative z-10 flex items-center justify-between p-6 pt-8 pb-2">
+<button class="text-white/60 hover:text-primary transition-colors flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined" style="font-size: 24px;">grid_view</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="text-white text-lg font-bold tracking-[0.1em] uppercase">Shourav A.I.</h1>
+<div class="flex items-center gap-2 mt-1">
+<span class="block w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary/80 text-[10px] tracking-widest font-medium uppercase">Active Listening</span>
+</div>
+</div>
+<button class="text-white/60 hover:text-primary transition-colors flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined" style="font-size: 24px;">settings</span>
+</button>
+</header>
+<!-- Main Visualizer Area -->
+<main class="relative z-10 flex-1 flex flex-col items-center w-full max-w-md mx-auto">
+<!-- Digital Face / RPM Gauge -->
+<div class="relative w-full flex flex-col items-center justify-center py-10 shrink-0">
+<!-- Outer Glow/Aura -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<!-- The Gauge Container -->
+<div class="relative size-64 rounded-full p-[2px] bg-chrome-ring shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+<!-- Inner Black Hole -->
+<div class="absolute inset-[2px] rounded-full bg-[#050505] z-0 flex items-center justify-center overflow-hidden">
+<!-- Abstract Digital Face Image -->
+<div class="absolute inset-0 opacity-80 mix-blend-screen" data-alt="Abstract golden digital fluid waves forming a vague face shape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBBx1_GG_1DQGINau-HsS0GCTjwiUZqcpGgDD0wQkye4y1y4M6cziJ74XFnFhtvNbZAXrzQEor47FIxoR-tIFQfU7tzKJsLDFj_Ix0ZMtmGORWQLHLfV9UK-4dT_9wKLzZamFwPFrHffr-rjVCFSkOYOyL1N0t77DS6u_Nv5CQzVdf83t_wFO-0bS9UJeqMI_IcKB7N1PNWRGdDi_blguZc71y2iT_oEPz5f3WhoEyp3jWHByMzZuuoBAuXR91p5r39QhFioLMzdE"); background-size: cover; background-position: center;'>
+</div>
+<!-- RPM Ticks (SVG Overlay) -->
+<svg class="absolute inset-0 w-full h-full opacity-40 rotate-180" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="44" stroke="white" stroke-dasharray="1 4" stroke-width="0.5"></circle>
+<circle cx="50" cy="50" fill="none" r="40" stroke="#ecb613" stroke-dasharray="20 60" stroke-width="0.5" transform="rotate(90 50 50)"></circle>
+</svg>
+<!-- Center Active Glow -->
+<div class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary/20 to-transparent blur-md animate-pulse"></div>
+</div>
+</div>
+<!-- Status Indicator Text under visualizer -->
+<div class="mt-8 text-center space-y-1">
+<p class="text-white/40 text-xs tracking-[0.2em] font-display">SYSTEM STATUS</p>
+<p class="text-white text-xl font-bold tracking-tight">PROCESSING INPUT</p>
+</div>
+</div>
+<!-- Live Transcript Stream -->
+<div class="w-full flex-1 flex flex-col justify-end px-6 pb-4 overflow-hidden mask-image-gradient">
+<div class="flex flex-col gap-6 overflow-y-auto no-scrollbar mask-linear-fade" style="mask-image: linear-gradient(to top, black 80%, transparent 100%);">
+<!-- Spacer to push content down initially -->
+<div class="h-4"></div>
+<!-- History Item -->
+<div class="group flex flex-col gap-2 opacity-40 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-3">
+<span class="text-[10px] text-white/30 uppercase tracking-widest font-display">User • 10:41 AM</span>
+</div>
+<p class="text-white/80 font-body text-lg leading-relaxed">
+                        Check the tire pressure sensors.
+                    </p>
+<div class="h-px w-full bg-white/5 mt-2"></div>
+</div>
+<!-- History Item (AI) -->
+<div class="group flex flex-col gap-2 opacity-60 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-3">
+<span class="text-[10px] text-primary/60 uppercase tracking-widest font-display">SHOURAV • 10:41 AM</span>
+</div>
+<p class="text-primary font-body text-lg leading-relaxed">
+                        Sensors indicate left-rear is slightly low at 29 PSI. All others are optimal at 32 PSI.
+                    </p>
+<div class="h-px w-full bg-white/5 mt-2"></div>
+</div>
+<!-- Current Live Item -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<span class="text-[10px] text-white/50 uppercase tracking-widest font-display">Live Input</span>
+</div>
+<p class="text-white font-body text-2xl font-medium leading-tight">
+                        Navigate to the nearest charging station<span class="text-primary blink-cursor">_</span>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Control Dock -->
+<footer class="relative z-20 w-full p-6 pt-2">
+<div class="flex items-center justify-between gap-4 max-w-md mx-auto">
+<!-- Keyboard Input -->
+<button class="size-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 hover:border-white/20 transition-all active:scale-95">
+<span class="material-symbols-outlined">keyboard</span>
+</button>
+<!-- Main Mic / Action Button -->
+<button class="h-20 flex-1 rounded-full bg-primary flex items-center justify-center gap-3 text-background-dark font-bold text-lg tracking-wide hover:brightness-110 transition-all active:scale-95 shadow-[0_0_20px_#ecb61340]">
+<div class="relative flex items-center justify-center">
+<!-- Pulsing rings for 'Listening' state -->
+<span class="absolute inline-flex h-full w-full rounded-full bg-background-dark opacity-10 animate-ping"></span>
+<span class="material-symbols-outlined relative z-10" style="font-size: 32px; font-variation-settings: 'FILL' 1;">graphic_eq</span>
+</div>
+<span>LISTENING</span>
+</button>
+<!-- Stop/Cancel -->
+<button class="size-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-red-500/20 hover:text-red-500 hover:border-red-500/50 transition-all active:scale-95">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Bottom Indicator Bar (iOS Home) -->
+<div class="w-full flex justify-center mt-4">
+<div class="w-32 h-1 bg-white/20 rounded-full"></div>
+</div>
+</footer>
+</body></html>

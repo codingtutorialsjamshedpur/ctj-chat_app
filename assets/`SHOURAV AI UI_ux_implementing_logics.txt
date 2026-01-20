@@ -1,0 +1,237 @@
+`SHOURAV AI THEME`
+
+------------------
+
+## 1. CORE DESIGN PHILOSOPHY
+
+Design a **luxury, voice-first, gesture-aware AI interface** named **SHOURAV A.I.**, inspired by:
+
+* **Nothing OS minimal discipline**
+* **High-end automotive AI (Mercedes / Tesla / Audi MMI)**
+* **Human-like calm breathing**
+* **Obsidian black + gold/chrome precision**
+* **Zero clutter, zero cartoonism**
+
+This is **not a chatbot UI**.
+This is a **sentient control surface**.
+
+---
+
+## 2. COLOR, MATERIAL & LIGHT SYSTEM
+
+### Base Palette
+
+* **Primary Background:** Absolute Black (#000000)
+* **Accent Metals:**
+
+  * Chrome Gold (warm)
+  * Deep Amber
+  * Subtle Cyan (only for neutral AI state)
+* **Text:** Soft off-white (never pure white)
+
+### Material Language
+
+* Glassy matte surfaces
+* Soft inner glow (never outer glow)
+* Metallic rings with **realistic depth**
+* No gradients unless radial and subtle
+
+---
+
+## 3. HUMAN BREATH–INSPIRED AI MOTION (CRITICAL)
+
+### While A.I. is:
+
+* Listening
+* Processing
+* Thinking
+* Anticipating user action
+
+👉 **ALL animations must feel like slow human breathing**
+
+#### Breath Animation Rules
+
+* Expansion: **3.5s ease-in**
+* Hold: **0.6s**
+* Contraction: **3.5s ease-out**
+* Never loop mechanically — introduce ±4% randomness
+* No sharp edges, no sudden stops
+
+### Visual Indicators
+
+* Central orb / mic ring subtly expands & contracts
+* Light intensity rises on inhale, fades on exhale
+* Motion must calm the user, not excite
+
+---
+
+## 4. VIBRATION & HAPTICS (GESTURE-AWARE)
+
+### Haptic Philosophy
+
+Haptics must feel **organic**, like:
+
+* Chest vibration while breathing
+* Fingertips sensing energy
+
+### Use vibrations when:
+
+* AI starts listening → soft single pulse
+* AI processing → slow rhythmic micro-pulses synced with breath
+* User anticipates swipe (finger pauses near button) → faint pre-haptic
+* Confirmation / action complete → deep short pulse
+
+❌ Never use sharp, notification-style vibration
+❌ Never vibrate repeatedly without purpose
+
+---
+
+## 5. GESTURE-LED UX FLOW
+
+### Gesture Priority
+
+* **Swipe > Tap**
+* **Hold > Menu**
+* **Anticipation > Reaction**
+
+### Gesture Mapping
+
+* Swipe Up → Persona / Chat Mode
+* Swipe Down → Send / Execute
+* Swipe Left → Chat History / Memory
+* Swipe Right → Settings
+* Center Hold → Voice Control (primary)
+
+### Anticipatory Animation (VERY IMPORTANT)
+
+When the user’s finger **moves toward** a gesture:
+
+* UI begins reacting **before touch**
+* Button slightly tilts
+* Glow subtly follows finger direction
+* Breath animation syncs toward that direction
+
+---
+
+## 6. HOME / VOICE CONTROL – REST STATE
+
+* Centered circular mic / AI core
+* Soft pulsing ring (neutral cyan → gold on wake)
+* Absolute minimal UI
+* No text unless necessary
+* Status shown through motion, not labels
+
+The AI must feel **awake but resting**.
+
+---
+
+## 7. AI PROCESSING STATE (SIGNATURE EXPERIENCE)
+
+When AI is thinking:
+
+* Central orb becomes denser
+* Breathing slows slightly
+* Inner light rotates microscopically
+* Micro-particles drift inward
+* Haptics follow slow inhale/exhale
+
+This must feel like **intelligence forming**, not loading.
+
+❌ No spinners
+❌ No progress bars
+❌ No percentage indicators
+
+---
+
+## 8. RECORD / REC BUTTON (CENTER-LOCKED)
+
+* REC button placed **exact center of screen**
+* Accessible from all directions
+* Chrome / Gold finish with soft reflection
+* Expands slightly on approach (anticipation)
+* Morphs smoothly into processing orb
+
+REC is the **heart of the system**, not a button.
+
+---
+
+## 9. SPLASH / FIRST BOOT EXPERIENCE
+
+### First Install Behavior
+
+* Default theme: **Leather**
+* Logo: **SHOURAV A.I.**
+* Centered, minimal, gold on black
+* Very slow fade-in
+* One single breath animation
+* No sound, no vibration
+
+### After User Selects Theme
+
+* Splash logo adapts to selected theme
+* Material, glow, and finish update accordingly
+* Motion language remains unchanged
+
+---
+
+## 10. PERSONA & VOICE VISUALIZER
+
+* Face / mask is abstract, not human
+* Metallic sculpted look
+* Light moves with speech rhythm
+* Visualizer responds to **meaning**, not volume
+* Calm authority, never playful
+
+---
+
+## 11. SETTINGS & SECONDARY SCREENS
+
+* Settings appear as floating layers
+* Never replace the home screen abruptly
+* Transitions slide with breath rhythm
+* Toggles feel mechanical and premium
+* Every interaction has weight
+
+---
+
+## 12. ANIMATION QUALITY BAR (NON-NEGOTIABLE)
+
+All animations must:
+
+* Be **slow, intentional, confident**
+* Use **ease-in-out only**
+* Avoid bounce, elastic, springy effects
+* Feel expensive even at rest
+
+Think:
+
+> “A luxury car dashboard breathing quietly at night.”
+
+---
+
+## 13. STRICT REJECTIONS
+
+❌ No neon
+❌ No cartoon icons
+❌ No emojis
+❌ No fast motion
+❌ No playful AI behavior
+❌ No clutter
+❌ No over-text explanations
+
+---
+
+## 14. FINAL DESIGN INTENT STATEMENT
+
+SHOURAV A.I. should feel like:
+
+* A silent companion
+* A thinking presence
+* An intelligent system that waits, breathes, and responds only when needed
+
+**If motion stops, the app feels dead.
+If motion is too fast, the app feels cheap.**
+
+Balance is everything.
+
+---

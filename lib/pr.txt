@@ -1,0 +1,3 @@
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\implementation_plan.md C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\task.md create these 2 files (implementation_plan.md and task.md) with this given prompt now start implementing and update task.md before moving on to a differnt phase:
+implementation_plan:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\implementation_plan.md 
+task:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\task.md read C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\main.dart because i wanted to add features for improvement. 

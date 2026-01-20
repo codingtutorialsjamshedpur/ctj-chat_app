@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CTJ AI Conversation - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 4px 4px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<div class="relative z-10 flex flex-col h-full px-5 pt-8 pb-6 justify-between">
+<div class="flex flex-col gap-4 shrink-0">
+<div class="flex justify-between items-center">
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight uppercase">SHOURAV</h1>
+<div class="flex gap-1 bg-white/5 rounded-full p-1 backdrop-blur-sm">
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex justify-start">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-secondary-orange/30 bg-secondary-orange/10 pl-4 pr-4 backdrop-blur-md">
+<span class="text-secondary-orange text-sm font-bold leading-normal tracking-wide">28°C HAZE | AQI 150</span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-4 py-6 overflow-y-auto no-scrollbar mask-image-gradient">
+<div class="flex justify-center my-2">
+<span class="text-white/30 text-xs font-mono tracking-widest uppercase">Today</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-5 shadow-lg">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                            "नमस्ते! मैं ऑनलाइन हूँ. आज आप क्या करना चाहेंगे?"
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] ml-2 mt-1 font-mono">10:42 AM</span>
+</div>
+<div class="flex flex-col items-end max-w-[85%] self-end animate-[fadeIn_0.5s_ease-out_0.1s_both]">
+<div class="glass-card bg-white/10 rounded-2xl rounded-tr-sm p-5 shadow-lg border-white/20">
+<p class="text-white text-lg font-medium leading-relaxed">
+                            Play the 'Cosmic Vibes' playlist.
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] mr-2 mt-1 font-mono">10:43 AM</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out_0.2s_both]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-5 shadow-lg flex flex-col gap-3">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                            Playing 'Cosmic Vibes' on Spotify.
+                        </p>
+<div class="flex items-center gap-3 bg-black/20 rounded-xl p-3 border border-white/5">
+<div class="w-10 h-10 rounded-lg bg-secondary-orange flex items-center justify-center text-black">
+<span class="material-symbols-outlined">music_note</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold">Starlight Echoes</span>
+<span class="text-xs text-white/50">Lo-Fi • 3:42</span>
+</div>
+<div class="ml-auto">
+<div class="flex gap-1 items-end h-4">
+<div class="w-1 h-2 bg-primary animate-pulse"></div>
+<div class="w-1 h-4 bg-primary animate-pulse delay-75"></div>
+<div class="w-1 h-3 bg-primary animate-pulse delay-150"></div>
+</div>
+</div>
+</div>
+</div>
+<span class="text-white/30 text-[10px] ml-2 mt-1 font-mono">10:43 AM</span>
+</div>
+<div class="flex flex-col items-end max-w-[85%] self-end animate-[fadeIn_0.5s_ease-out_0.3s_both]">
+<div class="glass-card bg-white/10 rounded-2xl rounded-tr-sm p-5 shadow-lg border-white/20">
+<p class="text-white text-lg font-medium leading-relaxed">
+                            Also, turn on the studio lights.
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] mr-2 mt-1 font-mono">10:44 AM</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out_0.4s_both]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-4 shadow-lg">
+<div class="flex items-center gap-3">
+<div class="flex gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce delay-100"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce delay-200"></span>
+</div>
+<span class="text-white/50 text-sm font-mono uppercase tracking-wider">Processing...</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full shrink-0 pt-2">
+<div class="relative flex items-center w-full h-16 rounded-full bg-secondary-orange overflow-hidden nothing-dot-bg shadow-[0_0_40px_rgba(255,85,0,0.3)] transition-transform active:scale-[0.99]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full opacity-0 hover:opacity-100 transition-opacity pointer-events-none"></div>
+<input class="w-full h-full bg-transparent border-none focus:ring-0 text-black placeholder-black/60 px-8 text-lg font-medium font-display" placeholder="Type a message..." type="text"/>
+<button class="absolute right-2 h-12 w-12 flex items-center justify-center bg-black text-secondary-orange rounded-full m-1 hover:scale-105 transition-transform active:scale-95 shadow-md">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

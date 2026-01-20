@@ -1,0 +1,241 @@
+create these 2 files (implementation_plan.md and task.md) with this given prompt now start implementing and update task.md before moving on to a differnt phase:
+implementation_plan:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\implementation_plan.md 
+task:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\task.md 
+
+partially screens are made in C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib
+
+Here is the **single combined, clean, production-grade master prompt** that merges everything into one clear instruction set. You can copy-paste this wherever you want to use it.
+
+---
+
+# Task: Existing Flutter UI with Tailwind-Based Designs (Using GetX)
+
+You are given an **existing Flutter application** whose complete business logic, controllers, navigation, state management, and API integrations are already implemented in:
+ C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\features.txt
+
+
+⚠️ This logic must remain **completely untouched**.
+
+You are also given a set of **new UI/UX designs** created using Tailwind CSS, along with PNG visual references, located in:
+
+`C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\`
+
+---
+
+## Screens to Convert and Replace
+
+You must convert the following HTML designs into Flutter widgets and **replace the existing screens** with these new designs:
+
+1. Splash Screen
+
+   * `Splash_Screen.html`
+   * `Splash_Screen.png`
+
+2. Home Screen (Before state)
+
+   * `Home_screen_before.html`
+   * `Home_screen_before.png`
+
+3. Home Screen (After state)
+
+   * `Home_screen_after.html`
+   * `Home_screen_after.png`
+
+4. Voice Games Arcade
+
+   * `voice_games_arcade.html`
+   * `voice_games_arcade.png`
+
+5. Voice Studio
+
+   * `voice_studio.html`
+   * `voice_studio.png`
+
+6. Settings
+
+   * `settings.html`
+   * `settings.png`
+
+7. History
+
+   * `history.html`
+   * `history.png`
+
+---
+
+## Core Objective
+
+Your job is to **create only the UI layer** of the Flutter app so that it visually matches the provided Tailwind HTML designs as closely as possible, while keeping **all existing logic, controllers, navigation, and GetX bindings exactly the same**.
+
+This is a UI replacement task, not a refactor.
+
+---
+
+## Absolute Rules (Must Follow)
+
+1. DO NOT modify any existing business logic.
+2. DO NOT change or refactor any controllers, services, API calls, or state logic.
+3. DO NOT rename any routes, variables, bindings, controllers, or methods.
+4. DO NOT change navigation behavior.
+5. DO NOT introduce new flows or parallel screens.
+
+---
+
+## What You ARE Allowed to Change
+
+You may update **only**:
+
+* Widgets
+* Layouts
+* Styling
+* Animations
+* Visual effects
+
+---
+
+## Visual Accuracy Requirements
+
+The Flutter UI must match the HTML designs as closely as possible in terms of:
+
+* Colors
+* Fonts
+* Spacing
+* Proportions
+* Gradients
+* Shadows
+* Blur / Glassmorphism
+* Glow effects
+* Animations
+* Transitions
+* Button styles
+* Card styles
+* Layout structure
+
+Pixel-close is the goal.
+
+---
+
+
+But:
+
+⚠️ All logic, controller usage, navigation, and behavior must remain unchanged.
+
+---
+
+## Safe Replacement Strategy
+
+For each screen:
+
+1. Locate the existing widget
+2. Keep the same class name
+3. Keep the same constructor
+4. Keep the same GetX controller usage
+5. Keep the same bindings
+6. Replace ONLY the widget tree
+7. Preserve all callbacks and observables
+8. Rewire UI events to existing controller methods
+
+Nothing should break.
+
+---
+
+## Technical Constraints
+
+* Framework: Flutter
+* State Management: GetX
+* Must fit into the existing project structure
+* Must use clean widget composition
+* Must avoid excessive nesting
+* Must use `const` where possible
+* Must avoid unnecessary rebuilds
+* Must use Flutter-native animations:
+
+  * AnimatedContainer
+  * TweenAnimationBuilder
+  * AnimationController
+  * Hero
+  * etc.
+
+---
+
+## Production Quality Requirements
+
+Your output must be:
+
+* Production-ready
+* Fully responsive
+* Performance-optimized
+* Cleanly structured
+* Maintainable
+
+---
+
+## Deliverables (In Order)
+
+### Phase 1: Splash Screen
+
+1. A Flutter Splash Screen widget matching `Splash_Screen.html`
+2. Any helper widgets required
+3. Proper GetX compatibility
+4. Responsive layout
+
+### Then continue with:
+
+* Home (Before)
+* Home (After)
+* Voice Games Arcade
+* Voice Studio
+* Settings
+* History
+
+---
+
+## Output Format (For Each Screen)
+
+You must provide:
+
+1. Full Flutter widget code
+2. Helper widgets (if any)
+3. Where to place the file (path suggestion)
+4. How it integrates with existing GetX navigation
+5. Any pubspec.yaml dependencies (if needed)
+
+---
+
+## Ambiguity Rule
+
+If anything in the HTML is unclear:
+
+→ Make a reasonable UI decision
+→ Do NOT ask questions
+→ Move forward
+
+---
+
+## Your Workflow
+
+1. Analyze the HTML and PNG
+2. Extract layout, colors, fonts, spacing, effects
+3. Rebuild UI in Flutter
+4. Integrate with GetX
+5. Keep logic untouched
+6. Optimize performance
+7. Output production-grade code
+
+---
+
+## Optional System Setup
+
+If needed, you may create a shared UI system for consistency:
+
+* App colors
+* Gradients
+* Glassmorphism widgets
+* Glow widgets
+* Buttons
+* Cards
+* Text styles
+
+---
+
+​

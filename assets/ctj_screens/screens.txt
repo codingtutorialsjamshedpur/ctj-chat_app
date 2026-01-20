@@ -1,0 +1,82 @@
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\ui these are the new screens C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\screens.txt made now i wanted to confirm that in C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\main.dart these screens are replaced with old screens and replaced with these new screens or not?C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\running_code.txt consists of old screens and buisness logic .
+I have checked lib/main.dart and it still contains the old screens. The new screens are present in lib/ui/screens/ but are currently static mockups and have not been integrated into the main application logic yet.
+
+Would you like me to proceed with replacing the old screens in lib/main.dart with these new designs while preserving your existing business logic?yes
+You are an expert Flutter UI/UX engineer with strong experience in converting modern HTML/CSS designs into pixel-perfect Flutter screens.
+
+I have an existing Flutter application whose full source code is in `C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\main.dart`. This app already contains complete business logic, navigation logic, state management, and API integrations.
+
+I also have a new UI/UX design for screens in the form of containing in the folder as C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens:
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\Splash_Screen
+* `Splash_Screen.html` (Tailwind-based design)
+* `Splash_Screen.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\Home_screen_before
+* `Home_screen_before.html` (Tailwind-based design)
+* `Home_screen_before.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\Home_screen_after
+* `Home_screen_after.html` (Tailwind-based design)
+* `Home_screen_after.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\voice_games_arcade
+* `voice_games_arcade.html` (Tailwind-based design)
+* `voice_games_arcade.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\voice_studio
+* `voice_studio.html` (Tailwind-based design)
+* `voice_studio.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\settings
+* `settings.html` (Tailwind-based design)
+* `settings.png` (visual reference)
+
+C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\history
+* `history.html` (Tailwind-based design)
+* `history.png` (visual reference)
+
+### Your Task
+
+Convert the UI/UX of `Splash_Screen.html,Home_screen_before.html,Home_screen_after.html,voice_games_arcade.html,voice_studio.html,settings.html,history.html` 
+into Flutter (Dart) code using **GetX** state management.
+
+### Strict Rules
+
+1. DO NOT modify any existing business logic.
+2. DO NOT change any controllers, services, API calls, or navigation logic unless absolutely required to render the UI.
+3. DO NOT rename existing routes, variables, or controllers unless unavoidable.
+4. ONLY update the UI layer (widgets, layout, styling, animations, and visual effects).
+5. Match the HTML design as closely as possible:
+
+   * Colors
+   * Fonts
+   * Gradients
+   * Shadows
+   * Glassmorphism effects
+   * Glow effects
+   * Animations
+   * Spacing and proportions
+6. The Flutter output should be production-ready and responsive.
+7. Use best practices for Flutter UI performance.
+
+### Technical Requirements
+
+* Framework: Flutter
+* State management: GetX
+* Must be compatible with the existing project structure.
+* Use clean widget composition.
+* Avoid unnecessary rebuilds.
+* Animations should use Flutter’s native animation tools (AnimatedContainer, Tween, AnimationController, etc).
+
+### Deliverables
+
+1. A Flutter Splash Screen widget that visually matches `Splash_Screen.html`.
+2. Any helper widgets needed (if required).
+3. Clear instructions on where to place the new files.
+4. Mention any pubspec dependencies required (if any).
+
+If something is ambiguous, make a reasonable UI decision instead of asking questions.
+
+Start by analyzing the HTML and PNG carefully, then generate the Flutter code.
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Home</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#000000", /* Modified to pure black as per request */
+                        "metal-dark": "#1a1a1a",
+                        "metal-light": "#4a4a4a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    boxShadow: {
+                        'inner-metallic': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.1), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5)',
+                        'glow-gold': '0 0 20px -5px rgba(236, 182, 19, 0.3)',
+                    },
+                    backgroundImage: {
+                        'metal-gradient': 'linear-gradient(135deg, #2a2a2a 0%, #111 50%, #2a2a2a 100%)',
+                        'chrome-ring': 'conic-gradient(from 180deg at 50% 50%, #333 0deg, #666 45deg, #111 90deg, #ecb613 135deg, #111 180deg, #555 225deg, #333 270deg, #222 315deg, #333 360deg)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-gold {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Fade mask for the history list */
+        .mask-linear-fade {
+            mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
+        }
+
+        /* Subtle idle breathing animation */
+        @keyframes subtle-breath {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.02); }
+        }
+        .animate-breath {
+            animation: subtle-breath 6s ease-in-out infinite;
+        }
+        
+        /* Light sweep effect on ring */
+        @keyframes light-sweep {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .animate-sweep {
+            background-size: 200% 200%;
+            animation: light-sweep 10s linear infinite;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-black text-white font-display h-screen w-full overflow-hidden flex flex-col relative selection:bg-primary selection:text-black">
+<!-- Background Ambience -->
+<!-- Subtle center glow to lift the button off the void -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-neutral-900/20 rounded-full blur-3xl pointer-events-none z-0"></div>
+<!-- Top Status Bar (Automotive Dashboard Style) -->
+<div class="relative z-20 flex items-center justify-between px-8 py-6 w-full opacity-60">
+<!-- Left: Time/Mode -->
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold tracking-[0.2em] text-neutral-500">PARK</span>
+<div class="h-1 w-1 bg-primary rounded-full"></div>
+<span class="text-xs font-bold tracking-widest text-neutral-400">20:42</span>
+</div>
+<!-- Right: Status Icons -->
+<div class="flex items-center gap-4 text-neutral-500">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px]">battery_horiz_075</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="relative flex-1 flex items-center justify-center w-full z-10">
+<!-- Left: Ghost History (Rest State) -->
+<div class="absolute left-0 h-auto flex flex-col justify-center gap-6 pl-6 w-1/3 z-0 mask-linear-fade opacity-30">
+<div class="group flex items-center gap-3">
+<span class="material-symbols-outlined text-neutral-400 text-[20px]">history</span>
+<p class="font-body text-sm text-neutral-300 truncate">Schedule meeting w...</p>
+</div>
+<div class="group flex items-center gap-3 opacity-70">
+<span class="material-symbols-outlined text-neutral-400 text-[20px]">call_made</span>
+<p class="font-body text-sm text-neutral-300 truncate">Call Alice Mobil...</p>
+</div>
+<div class="group flex items-center gap-3 opacity-40">
+<span class="material-symbols-outlined text-neutral-400 text-[20px]">cloud</span>
+<p class="font-body text-sm text-neutral-300 truncate">Weather in Toky...</p>
+</div>
+<!-- Visual hint for swipe -->
+<div class="mt-4 flex items-center gap-2 opacity-50">
+<span class="material-symbols-outlined text-[16px] animate-pulse">chevron_left</span>
+<span class="text-[10px] tracking-widest font-bold uppercase text-neutral-500">History</span>
+</div>
+</div>
+<!-- Center: The Ignition Button Assembly -->
+<div class="relative group cursor-pointer z-20 scale-90 sm:scale-100">
+<!-- Directional Hints (Crosshairs) - Very subtle -->
+<div class="absolute inset-0 -m-12 flex items-center justify-center pointer-events-none opacity-20 group-hover:opacity-60 transition-opacity duration-700">
+<div class="absolute top-0 flex flex-col items-center gap-1">
+<span class="w-[1px] h-4 bg-gradient-to-b from-transparent to-primary"></span>
+<span class="text-[8px] tracking-[0.2em] text-primary/50">DRIVE</span>
+</div>
+<div class="absolute bottom-0 flex flex-col items-center gap-1">
+<span class="text-[8px] tracking-[0.2em] text-neutral-500">SETTINGS</span>
+<span class="w-[1px] h-4 bg-gradient-to-b from-neutral-700 to-transparent"></span>
+</div>
+<div class="absolute left-0 flex flex-row items-center gap-1">
+<span class="w-4 h-[1px] bg-gradient-to-r from-transparent to-neutral-700"></span>
+</div>
+<div class="absolute right-0 flex flex-row items-center gap-1">
+<span class="w-4 h-[1px] bg-gradient-to-l from-transparent to-neutral-700"></span>
+</div>
+</div>
+<!-- Outer Chrome/Gold Ring -->
+<!-- This creates the expensive milled metal look -->
+<div class="w-56 h-56 rounded-full bg-chrome-ring p-[3px] shadow-2xl relative">
+<!-- Inner Gap (Mechanical Separation) -->
+<div class="w-full h-full rounded-full bg-black p-[6px] relative">
+<!-- The Button Surface -->
+<div class="w-full h-full rounded-full bg-[#151515] relative flex flex-col items-center justify-center shadow-inner-metallic overflow-hidden active:scale-95 transition-transform duration-150 ease-out border border-white/5">
+<!-- Brushed Metal Texture Overlay -->
+<div class="absolute inset-0 opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px);"></div>
+<!-- Radial Gradient for depth -->
+<div class="absolute inset-0 bg-radial-gradient from-white/5 to-transparent opacity-30"></div>
+<!-- Icon Assembly -->
+<div class="relative z-10 flex flex-col items-center gap-3">
+<!-- Microphone Icon -->
+<!-- Using the primary gold color, mimicking an LED or gold inlay -->
+<div class="text-primary animate-breath drop-shadow-[0_0_8px_rgba(236,182,19,0.2)]">
+<span class="material-symbols-outlined icon-gold" style="font-size: 48px;">mic</span>
+</div>
+<!-- Engraved Branding -->
+<!-- Styled to look etched into the surface -->
+<div class="flex flex-col items-center gap-1 opacity-80">
+<h1 class="text-[10px] font-bold tracking-[0.25em] text-transparent bg-clip-text bg-gradient-to-b from-primary to-[#8a6a0b] drop-shadow-sm border-t border-white/5 pt-3 mt-1">
+                                    SHOURAV A.I.
+                                </h1>
+</div>
+</div>
+<!-- Active State Ring (Hidden in idle, implied structure) -->
+<div class="absolute inset-2 rounded-full border border-primary/10 pointer-events-none"></div>
+</div>
+</div>
+<!-- Specular Highlight on Ring (Static Reflection) -->
+<div class="absolute top-4 left-10 w-24 h-12 bg-white/10 blur-xl rounded-full -rotate-45 pointer-events-none mix-blend-overlay"></div>
+</div>
+</div>
+<!-- Right Side Balance (Minimal) -->
+<div class="absolute right-0 h-full w-12 flex flex-col items-center justify-center opacity-20">
+<div class="h-32 w-[1px] bg-gradient-to-b from-transparent via-neutral-600 to-transparent"></div>
+</div>
+</div>
+<!-- Bottom Actions / Hint -->
+<div class="relative z-20 w-full p-8 flex justify-center opacity-0 hover:opacity-100 transition-opacity duration-500 delay-1000">
+<p class="text-[10px] text-neutral-600 tracking-[0.3em] font-bold uppercase">Tap to speak</p>
+</div>
+</body></html>

@@ -1,0 +1,143 @@
+create these 2 files (implementation_plan.md and task.md) with this given prompt now start implementing and update task.md before moving on to a differnt phase:
+implementation_plan:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\implementation_plan.md 
+task:C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\task.md 
+
+
+Here is the **single combined, clean, production-grade master prompt** that merges everything into one clear instruction set. You can copy-paste this wherever you want to use it.
+
+---
+
+# Task:(Using GetX)
+
+You are given an **existing Flutter screens map and add** whose complete business logic, controllers, navigation, state management, and API integrations are already implemented in:
+ C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\features.txt
+idea of code take help or inspiration from : C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\lib\running_code.txt use API integrations same as done here.
+
+⚠️ This logic must remain **completely untouched**.
+
+You are also given a set of **new UI/UX designs** created using Tailwind CSS, along with PNG visual references, located in:
+
+`C:\Users\shour\OneDrive\Desktop\flutter practise\chat_ai\assets\ctj_screens\`
+
+---
+
+## Screens
+
+existing screens:
+
+1. Splash Screen
+
+
+2. Home Screen (Before state)
+
+
+3. Home Screen (After state)
+
+
+4. Voice Games Arcade
+
+
+5. Voice Studio
+
+
+6. Settings
+
+
+7. History
+
+---
+
+## Core Objective
+
+Your job is to map UI layer of all screens ** of the Flutter app so that it visually matches the provided screens designs as closely as possible, while keeping **all existing logic, controllers, navigation, and GetX bindings exactly the same**.
+
+
+
+---
+
+## What You ARE Allowed to Change
+
+1. implement existing business logic.
+2. implement or refactor any controllers, services, API calls, or state logic.
+3. implement any routes, variables, bindings, controllers, or methods.
+4. implement navigation behavior.
+5. implement new flows or parallel screens.
+
+---
+
+## Visual Accuracy Requirements
+
+The Flutter UI must match the HTML designs as closely as possible in terms of:
+
+* Colors
+* Fonts
+* Spacing
+* Proportions
+* Gradients
+* Shadows
+* Blur / Glassmorphism
+* Glow effects
+* Animations
+* Transitions
+* Button styles
+* Card styles
+* Layout structure
+
+Pixel-close is the goal.
+
+---
+
+But:
+
+All logic, controller usage, navigation, and behavior must remain changed.
+
+---
+
+## Safe Replacement Strategy
+
+For each screen:
+
+1. Locate the existing widget
+2. Keep the same class name
+3. Keep the same constructor
+4. Keep the same GetX controller usage
+5. Keep the same bindings
+6. Replace ONLY the widget tree
+7. Preserve all callbacks and observables
+8. Rewire UI events to existing controller methods
+
+Nothing should break.
+
+---
+
+## Technical Constraints
+
+* Framework: Flutter
+* State Management: GetX
+* Must fit into the existing project structure
+* Must use clean widget composition
+* Must avoid excessive nesting
+* Must use `const` where possible
+* Must avoid unnecessary rebuilds
+* Must use Flutter-native animations:
+
+  * AnimatedContainer
+  * TweenAnimationBuilder
+  * AnimationController
+  * Hero
+  * etc.
+
+---
+
+## Production Quality Requirements
+
+Your output must be:
+
+* Production-ready
+* Fully responsive
+* Performance-optimized
+* Cleanly structured
+* Maintainable
+
+---
+

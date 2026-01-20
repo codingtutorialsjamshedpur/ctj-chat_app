@@ -1,0 +1,228 @@
+### App Overview
+The app is a voice assistant named "CTJ AI" built with Flutter, focusing on AI-driven interactions, voice commands, games, weather info, sound effects, and multimedia features. It uses GetX for state management, Hive for local storage, and various APIs for AI responses (Gemini, OpenRouter), search (Google Custom Search), weather/AQI (Open-Meteo), and more. Key emphases include personalization (personas, voices, user name/title), real-time data fetching, emotion detection, festival greetings, and multi-language support (especially Hindi/English with TTS normalization).
+
+The app assumes adult users, handles edgy content without moralizing, and resists jailbreaks. It has alpha version indicators for testing/feedback. No strict knowledge cutoff; it fetches real-time info via searches.
+
+Navigation is primarily modal-based (bottom sheets, dialogs) with GetX routing for screen transitions. Main flow: Splash → Main Voice Assistant. Other screens are overlays/bottom sheets triggered by buttons or voice commands. No complex routing like tabs/stacks; mostly linear with modals.
+
+Below, screens are broken down separately, focusing on features, data handling, interactions, and navigation triggers/exits. UI/UX elements (e.g., layouts, colors, animations) are omitted as per request.
+
+---
+NAVIGATION PATHS
+Primary Navigation Tree:
+Splash Screen (6s)
+     ↓
+Voice Assistant Page (Main)
+     ├── Games Menu → Individual Game Sessions
+     ├── Voice Studio → Persona/Voice Settings
+     ├── Image Creator → Image Generation Interface
+     ├── History → Conversation Log
+     └── Settings → App Preferences
+---
+### 1. Splash Screen
+**Purpose**: Introductory loading screen to set up the app, play sounds, and transition to the main screen.
+
+**Key Features**:
+- Displays app name ("CTJ AI"), subtitle ("Voice Assistant"), and alpha version badge with testing notice.
+- Checks and initializes Hive storage.
+- Plays a splash sound (app_splashscreen_sound.mp3).
+- Handles animation controllers for rotation, pulse, scale, particles, and text (e.g., icon glow, text slide-in).
+- Developer info implicitly tied (e.g., from assets like icon.png).
+- Auto-navigates after 6 seconds.
+
+**Data Handling**:
+- No user data input; static content.
+- Uses asset sources for sounds and images.
+
+**Interactions**:
+- No user input; passive screen.
+- Error handling: Falls back to placeholder if icon asset fails.
+
+**Navigation**:
+- Entry: App launch (via main() → MyApp → home: SplashScreen).
+- Exit: Auto-transitions to VoiceAssistantPage with fade-in (Get.off).
+- No back navigation; one-way.
+
+---
+
+### 2. Voice Assistant Page (Main Screen)
+**Purpose**: Core interaction hub for voice/text commands, AI responses, weather display, chat history, and quick actions.
+
+**Key Features**:
+- Displays real-time weather (temperature, AQI) and location-based place name.
+- Shows conversation messages (user/AI) with roles, content, and selection mode for copying.
+- Voice input: Starts/stops listening, displays recording time, accumulated/partial text.
+- Text input: Manual entry via controller, with expanded view option.
+- AI Response Generation: Processes queries via rotating Gemini APIs or OpenRouter (Xiaomi/Qwen keys), with personas (e.g., Straight Forward, Therapist Mode).
+- Real-time Search: Integrates Google Custom Search for queries needing current info (e.g., news, facts); handles quotas/errors.
+- Emotion Detection: Analyzes text for emotions (happy, sad, etc.) via keywords; adjusts TTS/sounds/visuals.
+- Festival Greetings: Auto-detects today's festival (from calendar) and personalizes responses.
+- Sound Management: Plays contextual sounds (e.g., success, animal, game-specific) based on context/emotion/persona.
+- TTS Customization: Voice selection, speed (0.5-2.0x), pitch (0.5-2.0), with presets (Bass Boost, Chipmunk); normalizes Hindi text for pronunciation.
+- Speaking Modes: Utility (fast/factual) vs. Story (slow/immersive with pauses) based on content.
+- Wake Word: Listens for trigger (disabled due to dependency; uses Porcupine).
+- Image Generation: Triggers AI image creation via OpenRouter (Qwen model); embeds URLs in responses.
+- Song Playback: Multi-language database (Hindi, Punjabi, English, etc.); detects language, plays random/requested songs from assets.
+- Games: Starts/ends games (e.g., Roast Battle, Story Time) with scoring, difficulty (Easy/Medium/Hard).
+- Permissions: Requests/handles mic, location; checks connectivity/GPS.
+- Logging: Tracks events (e.g., open settings) to Hive.
+- Idle Handling: Timer for auto-stop listening/speaking.
+- Error Handling: Dialogs for no internet/GPS/permission; retries fetching.
+
+**Data Handling**:
+- Local Storage: Hive for voices, personas, settings, history; SharedPreferences for user name/title.
+- API Integration: HTTP requests for weather/AQI, search, AI (with timeouts, error messages).
+- State: GetX observables for listening/speaking status, messages, loading, emotions, etc.
+- Accumulates chat history (user/system/assistant roles).
+- Caches voices list from TTS engine.
+
+**Interactions**:
+- Mic Button: Toggles listening; vibrates on start/stop.
+- Send Button: Submits text input.
+- Long Press on Messages: Enters selection mode (select all, copy, cancel).
+- Quick Actions: Buttons for settings, games, voice studio, image creator, history.
+- Voice Commands: Processes queries like "play song", "generate image", "start game", "search X".
+- Feedback: Speaks responses, plays sounds, logs events.
+
+**Navigation**:
+- Entry: From SplashScreen (Get.off).
+- Exits/Triggers:
+  - To Settings: Bottom sheet via button.
+  - To Games Arcade: Bottom sheet via button.
+  - To Voice Studio: Bottom sheet via button.
+  - To Image Creator: Bottom sheet via button or voice command.
+  - To History: Bottom sheet via button.
+  - Error Dialogs: Modal dialogs with retry (Get.defaultDialog).
+  - No deep linking; all modals close with Get.back() or swipe.
+- Back: System back exits app; no internal stack.
+
+---
+
+### 3. Settings Bottom Sheet
+**Purpose**: Customization panel for app preferences and info.
+
+**Key Features**:
+- Toggles: Sound effects, image generation.
+- User Personalization: Name input, title dropdown (Mr./Mrs.).
+- Voice Selection: Dropdown from available TTS voices (filtered by language).
+- Persona Selection: Dropdown from predefined options (e.g., Dog Mode, Gen-Z Mode).
+- Developer Info: Static display of name (SHOURAV), launch date (Jan 2026), city (Jamshedpur), website.
+- Alpha Indicators: Badge and testing notice.
+
+**Data Handling**:
+- Saves to SharedPreferences/Hive on changes.
+- Loads voices dynamically from TTS.
+
+**Interactions**:
+- Input fields and dropdowns update state reactively.
+- Saves on change; applies immediately (e.g., voice change).
+
+**Navigation**:
+- Entry: Triggered from main screen button (showModalBottomSheet).
+- Exit: Swipe down or back; auto-saves changes.
+- No sub-navigation.
+
+---
+
+### 4. Games Arcade Bottom Sheet
+**Purpose**: Selection and management of voice-based games.
+
+**Key Features**:
+- Difficulty Selection: Easy/Medium/Hard toggles.
+- Game List: Grid of available games (e.g., Roast Battle, Story Time, Debate Mode, Astro Talk) with names, descriptions, icons.
+- Active Game Display: Shows current game, score; end button.
+- Game Logic: Per-game handling (e.g., riddles, debates) with AI responses, scoring, sounds.
+
+**Data Handling**:
+- State for active game, score, difficulty.
+- Integrates with AI for game responses.
+
+**Interactions**:
+- Tap game to start; updates active state.
+- End button resets game.
+
+**Navigation**:
+- Entry: From main screen button (showModalBottomSheet).
+- Exit: Get.back() on end or swipe; starting game closes sheet but continues in main.
+
+---
+
+### 5. Voice Studio Bottom Sheet
+**Purpose**: Fine-tune TTS parameters.
+
+**Key Features**:
+- Presets: Normal, Bass Boost, Chipmunk, Slow Motion, Hyper (set pitch/speed).
+- Sliders: Pitch (0.5-2.0), Speed (0.5-2.0x).
+- Visual EQ: Simulated bars (static/random heights).
+
+**Data Handling**:
+- Saves to Hive on slider changes.
+
+**Interactions**:
+- Tap preset applies values.
+- Sliders update reactively.
+
+**Navigation**:
+- Entry: From main screen (showModalBottomSheet).
+- Exit: Swipe or back; logs event.
+
+---
+
+### 6. Image Creator Bottom Sheet
+**Purpose**: Generate AI images from prompts.
+
+**Key Features**:
+- Prompt Input: Text field for description.
+- Generation: Uses OpenRouter (Qwen) to create images; displays URL or base64.
+- Quick Suggestions: Pre-filled ideas (e.g., "Sunset over beach").
+- Loading/Error: Progress indicator, error snacks.
+
+**Data Handling**:
+- API call for generation; embeds result in chat.
+
+**Interactions**:
+- Generate button triggers API; speaks success.
+- Tap suggestion auto-fills and generates.
+
+**Navigation**:
+- Entry: From main screen or voice (showModalBottomSheet).
+- Exit: Swipe or back; logs event.
+
+---
+
+### 7. Conversation History Bottom Sheet
+**Purpose**: View past messages.
+
+**Key Features**:
+- List Display: Messages with content, role (user/AI).
+- Empty State: "No history yet".
+
+**Data Handling**:
+- Pulls from messages list.
+
+**Interactions**:
+- Read-only; no editing.
+
+**Navigation**:
+- Entry: From main screen (showModalBottomSheet).
+- Exit: Swipe or back.
+
+---
+
+### 8. Error/Permission Dialogs (Modals)
+**Purpose**: Handle failures like no internet/GPS/permission.
+
+**Key Features**:
+- Messages: Specific errors (e.g., "No Internet", "GPS Disabled").
+- Retry Button: Re-checks services.
+
+**Data Handling**:
+- Tied to connectivity/location checks.
+
+**Interactions**:
+- Retry triggers re-fetch.
+- Barrier non-dismissible.
+
+**Navigation**:
+- Entry: Auto-triggered on errors (Get.defaultDialog).
+- Exit: Retry or system back (but non-dismissible until resolved).

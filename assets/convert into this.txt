@@ -1,0 +1,237 @@
+Perfect.
+Below is a **SINGLE, COMPLETE, READY-TO-PASTE MASTER PROMPT** that you can directly give to **Claude, Gemini, Google Stitch, or any design-AI**.
+
+This prompt already **bakes in**:
+
+✔ Directional Drag (not swipe)
+✔ Anticipatory Animation
+✔ Threshold-Based Commit
+✔ Spring Physics
+✔ Your **REC-centered joystick UI**
+✔ **SCREEN 1C = Interactive Voice Games**
+✔ Nothing OS + Luxury Automotive discipline
+✔ No code, only design + interaction logic
+
+You do **not** need to explain anything to the AI beyond this.
+
+---
+
+# 🧠 MASTER DESIGN & INTERACTION PROMPT
+
+*(Paste exactly as-is into Claude / Gemini / Stitch)*
+
+---
+
+## 🔰 PROJECT OVERVIEW
+
+Design a **system-level, voice-first AI assistant interface** named **SHOURAV A.I.**, inspired by:
+
+• Android system call UI
+• Nothing OS interaction discipline
+• Luxury automotive control consoles
+• Human–machine joystick metaphors
+
+The interface must feel **OS-level**, **mechanical**, and **intentional**, not app-like.
+
+---
+
+## 🔑 CORE INTERACTION PHILOSOPHY (MANDATORY)
+
+### ❌ DO NOT USE
+
+• Swipe navigation
+• Flick gestures
+• Instant tap actions for critical flows
+• Linear or teleporting animations
+
+### ✅ USE ONLY
+
+1️⃣ **Directional Drag (finger remains in contact)**
+2️⃣ **Anticipatory Animation before commit**
+3️⃣ **Threshold-Based Commit (distance-driven)**
+4️⃣ **Spring Physics for all returns and cancels**
+
+> The UI must preview intent **before** executing actions.
+
+---
+
+## 🎛️ GLOBAL CONTROL MODEL
+
+### CENTER-LOCKED RADIAL DRAG CONTROLLER
+
+• A single **REC (Mic) control** is fixed at the **exact center of the screen**
+• Acts as a **mechanical joystick**, not a button
+• Accepts **four-directional drag input**
+• Moves physically with the user’s finger
+• Direction locks after initial movement
+• Releasing early always returns to center with **spring physics**
+
+---
+
+## 🧭 GESTURE MAPPING (GLOBAL)
+
+| Direction | Interaction Type            | Commit Threshold | Action                      |
+| --------- | --------------------------- | ---------------- | --------------------------- |
+| UP        | Vertical Directional Drag   | 60–70% radius    | Change Persona              |
+| DOWN      | Vertical Directional Drag   | 60–70% radius    | Send / Confirm              |
+| LEFT      | Horizontal Directional Drag | 60–70% radius    | **Interactive Voice Games** |
+| RIGHT     | Horizontal Directional Drag | 60–70% radius    | Settings                    |
+
+• Below threshold → **Preview only**
+• Beyond threshold → **Commit + haptic confirmation**
+• Release early → **Elastic spring-back**
+
+---
+
+## 🟢 SCREEN 1 — HOME (Voice Control · Rest State)
+
+### LAYOUT
+
+• Pure black background
+• Absolute horizontal & vertical symmetry
+• REC control placed at **true screen center (row + column aligned)**
+
+---
+
+### 🎙️ REC CONTROL (CORE ELEMENT)
+
+• Large circular metallic control
+• Automotive start/stop inspiration
+• Chrome or soft gold ring (theme aware)
+• Text **“SHOURAV A.I.”** appears **engraved / minted** into the metal
+• No glow, no neon
+
+---
+
+### 🌀 IDLE STATE
+
+• No pulsing animation
+• Only subtle metallic light sweep
+• Calm, confident, waiting state
+
+---
+
+### 🧠 ANTICIPATORY FEEDBACK (CRITICAL)
+
+When user touches and begins dragging the REC control:
+
+• REC moves **1:1 with finger**
+• Directional hints fade in progressively
+• Action labels appear **before commit**
+• Opposing directions fade out
+• Resistance increases near commit threshold
+
+> The system must clearly communicate **what will happen next**.
+
+---
+
+## 🟢 SCREEN 1A — DRAG UP (CHANGE PERSONA)
+
+• Upward drag lifts REC slightly
+• Upper arc illuminates progressively
+• Label fades in: **“CHANGE PERSONA”**
+• Commit only after threshold
+• Cancel returns with spring physics
+
+---
+
+## 🟢 SCREEN 1B — DRAG DOWN (SEND / CONFIRM)
+
+• Downward drag compresses REC inward
+• Chrome ring tightens visually
+• Label appears: **“SEND”**
+• Threshold crossing locks action
+• Early release cancels with elastic return
+
+---
+
+## 🟢 SCREEN 1C — DRAG LEFT (INTERACTIVE VOICE GAMES)
+
+### PURPOSE
+
+Enter **Interactive Voice Games Mode**
+(voice-driven challenges, reflex games, puzzles, memory games)
+
+---
+
+### INTERACTION BEHAVIOR
+
+• Horizontal directional drag to the left
+• REC follows finger physically
+• Left arc illuminates progressively
+• Abstract, playful game glyphs fade in
+• Label appears gradually:
+**“VOICE GAMES”**
+
+• Resistance increases near commit zone
+• Commit only after threshold
+• Release before threshold → spring-back
+
+---
+
+### POST-COMMIT TRANSITION
+
+• Transition continues leftward momentum
+• Interface shifts into **Voice Games Hub**
+• REC recenters automatically
+• Tone shifts from “assistant” to “playful system”
+
+---
+
+### FEELING
+
+Like sliding a **console selector into Game Mode** —
+intentional, previewed, mechanically satisfying.
+
+---
+
+## 🟢 SCREEN 1D — DRAG RIGHT (SETTINGS)
+
+• Rightward drag reveals gear outline
+• Mechanical resistance near commit
+• Subtle click on commit
+• Cancel springs back smoothly
+
+---
+
+## 🟢 SCREEN 2 — GESTURE MODE (PRESS-AND-HOLD)
+
+• Activated by **press-and-hold**, not swipe
+• REC locks into joystick state
+• Directional arcs animate continuously
+• Commit requires distance threshold
+• Release always returns to center with spring motion
+
+---
+
+## 🟢 SPEAKING & LISTENING STATES (GLOBAL RULE)
+
+• Directional drag must remain available during speech
+• Live speech-to-text appears immediately
+• No blocking UI states
+• No delayed transitions
+
+---
+
+## 🧠 FINAL SYSTEM RULE
+
+> This interface replaces swipe navigation with a **center-locked directional drag system** using **anticipatory feedback**, **threshold-based intent confirmation**, and **spring-physics motion**, delivering a **system-level human–machine interaction experience**.
+
+---
+
+### ❗ IMPORTANT
+
+• Do NOT simplify gestures
+• Do NOT remove resistance or preview states
+• Do NOT convert drag into swipe
+• The UI must feel **mechanical, deliberate, and OS-level**
+
+---
+
+If you want, next I can:
+• Adapt this prompt specifically for **Google Stitch syntax**
+• Create a **Claude-optimized variant**
+• Convert this into a **UX justification / pitch deck**
+• Or translate this into **Flutter gesture architecture**
+
+Just tell me which one.

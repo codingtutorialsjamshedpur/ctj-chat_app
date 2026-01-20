@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Gesture Mode</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#0a0a0a", // Deep OLED black
+                        "metal-dark": "#1a1a1a",
+                        "metal-light": "#333333",
+                        "accent-red": "#ff4d4d",
+                        "accent-green": "#00e676",
+                        "accent-blue": "#2979ff",
+                        "accent-yellow": "#ecb613",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'metal-gradient': 'linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%)',
+                        'chrome-reflection': 'linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 40%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%)',
+                        'brushed-steel': 'repeating-linear-gradient(90deg, #111 0px, #151515 1px, #111 2px)',
+                    },
+                    boxShadow: {
+                        'neon-red': '0 0 15px rgba(255, 77, 77, 0.5)',
+                        'neon-green': '0 0 15px rgba(0, 230, 118, 0.5)',
+                        'neon-blue': '0 0 15px rgba(41, 121, 255, 0.5)',
+                        'neon-yellow': '0 0 15px rgba(236, 182, 19, 0.5)',
+                        'inner-pressed': 'inset 0 4px 15px rgba(0,0,0,0.9), inset 0 2px 5px rgba(0,0,0,0.5)',
+                        'hud-glow': '0 0 30px rgba(236, 182, 19, 0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .dot-matrix-bg {
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 4px 4px;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display h-screen w-full overflow-hidden select-none">
+<!-- Main Container -->
+<div class="relative flex h-full w-full flex-col">
+<!-- Background Texture (Dot Matrix + Vignette) -->
+<div class="absolute inset-0 pointer-events-none opacity-20 dot-matrix-bg"></div>
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-background-dark/80 via-transparent to-background-dark"></div>
+<!-- Top App Bar -->
+<header class="relative z-20 flex items-center justify-between p-6 pt-12 w-full">
+<h2 class="text-white/90 text-sm font-bold tracking-[0.2em] uppercase">Gesture Mode</h2>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-metal-dark border border-white/10 shadow-lg">
+<!-- Recording Dot -->
+<div class="w-2.5 h-2.5 bg-accent-red rounded-full animate-pulse shadow-neon-red"></div>
+</div>
+</header>
+<!-- Status Strip -->
+<div class="relative z-10 w-full flex justify-center py-4">
+<div class="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/5">
+<h3 class="text-primary tracking-[0.1em] text-xs font-mono animate-pulse">LISTENING FOR GESTURE...</h3>
+</div>
+</div>
+<!-- Central Interaction Area -->
+<main class="flex-1 flex items-center justify-center relative w-full h-full perspective-1000">
+<!-- Grid Lines Decoration -->
+<div class="absolute w-full h-[1px] bg-white/5 top-1/2 -translate-y-1/2"></div>
+<div class="absolute h-full w-[1px] bg-white/5 left-1/2 -translate-x-1/2"></div>
+<!-- Directional HUD Rings Container -->
+<div class="relative w-[340px] h-[340px] flex items-center justify-center">
+<!-- Outer HUD Ring (Static Brushed Metal) -->
+<div class="absolute inset-0 rounded-full border border-white/5 bg-gradient-to-br from-white/5 to-transparent opacity-30"></div>
+<div class="absolute inset-4 rounded-full border border-white/10 border-dashed opacity-20"></div>
+<!-- UP: Change Persona (Red) -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-all duration-300 opacity-60 hover:opacity-100">
+<div class="w-12 h-12 rounded-full bg-black border border-accent-red/30 flex items-center justify-center shadow-neon-red backdrop-blur-sm">
+<span class="material-symbols-outlined text-accent-red text-2xl">face_6</span>
+</div>
+<div class="text-center">
+<span class="block text-accent-red text-[10px] font-bold tracking-widest">UP</span>
+<span class="block text-white/60 text-[10px] tracking-wider uppercase">Persona</span>
+</div>
+</div>
+<!-- DOWN: Send Message (Green) -->
+<div class="absolute -bottom-16 left-1/2 -translate-x-1/2 flex flex-col-reverse items-center gap-3 transition-all duration-300 opacity-60 hover:opacity-100">
+<div class="w-12 h-12 rounded-full bg-black border border-accent-green/30 flex items-center justify-center shadow-neon-green backdrop-blur-sm">
+<span class="material-symbols-outlined text-accent-green text-2xl">send</span>
+</div>
+<div class="text-center">
+<span class="block text-accent-green text-[10px] font-bold tracking-widest">DOWN</span>
+<span class="block text-white/60 text-[10px] tracking-wider uppercase">Send</span>
+</div>
+</div>
+<!-- LEFT: History (Blue) -->
+<div class="absolute left-[-3.5rem] top-1/2 -translate-y-1/2 flex flex-row items-center gap-3 transition-all duration-300 opacity-60 hover:opacity-100">
+<div class="text-center w-14">
+<span class="block text-accent-blue text-[10px] font-bold tracking-widest">LEFT</span>
+<span class="block text-white/60 text-[10px] tracking-wider uppercase">History</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-black border border-accent-blue/30 flex items-center justify-center shadow-neon-blue backdrop-blur-sm">
+<span class="material-symbols-outlined text-accent-blue text-2xl">history</span>
+</div>
+</div>
+<!-- RIGHT: Settings (Yellow) -->
+<div class="absolute right-[-3.5rem] top-1/2 -translate-y-1/2 flex flex-row-reverse items-center gap-3 transition-all duration-300 opacity-60 hover:opacity-100">
+<div class="text-center w-14">
+<span class="block text-accent-yellow text-[10px] font-bold tracking-widest">RIGHT</span>
+<span class="block text-white/60 text-[10px] tracking-wider uppercase">Settings</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-black border border-accent-yellow/30 flex items-center justify-center shadow-neon-yellow backdrop-blur-sm">
+<span class="material-symbols-outlined text-accent-yellow text-2xl">settings</span>
+</div>
+</div>
+<!-- Guide Lines to Directions -->
+<div class="absolute inset-0 rounded-full pointer-events-none">
+<div class="absolute top-0 left-1/2 -translate-x-[0.5px] w-[1px] h-[40px] bg-gradient-to-t from-transparent to-accent-red/50"></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-[0.5px] w-[1px] h-[40px] bg-gradient-to-b from-transparent to-accent-green/50"></div>
+<div class="absolute left-0 top-1/2 -translate-y-[0.5px] h-[1px] w-[40px] bg-gradient-to-l from-transparent to-accent-blue/50"></div>
+<div class="absolute right-0 top-1/2 -translate-y-[0.5px] h-[1px] w-[40px] bg-gradient-to-r from-transparent to-accent-yellow/50"></div>
+</div>
+<!-- Central REC Actuator (Full Hold State) -->
+<!-- The button looks physically depressed into the screen -->
+<div class="relative z-20 group cursor-pointer">
+<!-- Glow underlay -->
+<div class="absolute inset-0 rounded-full bg-primary blur-[40px] opacity-10 group-active:opacity-20 transition-opacity duration-300"></div>
+<!-- Main Button Structure -->
+<div class="w-48 h-48 rounded-full bg-[#181818] relative flex items-center justify-center shadow-inner-pressed border-4 border-[#222]">
+<!-- Chrome/Metallic Ring -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#444] to-[#111] opacity-50 pointer-events-none"></div>
+<!-- Inner Pressed Surface -->
+<div class="w-40 h-40 rounded-full bg-gradient-to-b from-[#0a0a0a] to-[#151515] shadow-[inset_0_2px_10px_rgba(0,0,0,1)] flex items-center justify-center relative overflow-hidden">
+<!-- Static Reflection (Frozen Look) -->
+<div class="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/5 to-transparent pointer-events-none"></div>
+<!-- Content -->
+<div class="flex flex-col items-center justify-center z-10 gap-2">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-[0_0_8px_rgba(236,182,19,0.5)]">graphic_eq</span>
+<div class="flex flex-col items-center">
+<span class="text-[#444] text-[10px] font-bold tracking-[0.2em] uppercase inset-text">Engaged</span>
+<span class="text-white font-display font-bold text-sm tracking-wider mt-1 text-glow">SHOURAV A.I.</span>
+</div>
+</div>
+<!-- Fingerprint/Hold Visual Cue -->
+<div class="absolute inset-0 bg-primary/5 rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action / Cancel Hint -->
+<footer class="p-8 pb-12 flex justify-center z-10">
+<button class="flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white/50 text-sm font-medium tracking-wide hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-sm">close</span>
+<span>RELEASE TO CANCEL</span>
+</button>
+</footer>
+</div>
+</body></html>

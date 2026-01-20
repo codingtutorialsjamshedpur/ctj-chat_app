@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Persona &amp; Mood</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ecb613",
+              "background-light": "#e0e0e0",
+              "background-dark": "#0a0a0a",
+              "surface-dark": "#121212",
+              "chrome-light": "#eef2f3",
+              "chrome-dark": "#8e9eab",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            backgroundImage: {
+               'metallic-sheen': 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 49%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.2) 100%)',
+               'chrome-border': 'linear-gradient(145deg, #555, #fff, #555)',
+               'active-sweep': 'linear-gradient(90deg, transparent 0%, rgba(236, 182, 19, 0.2) 50%, transparent 100%)',
+            },
+            boxShadow: {
+                'glow': '0 0 15px rgba(236, 182, 19, 0.3)',
+                'inner-depth': 'inset 0 2px 10px rgba(0,0,0,0.8)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .dot-matrix-bg {
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .scanline {
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+            background-size: 100% 4px;
+        }
+        /* Custom scrollbar hiding */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-black">
+<!-- Background Ambience -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<!-- Dot Matrix Overlay -->
+<div class="absolute inset-0 dot-matrix-bg opacity-20"></div>
+<!-- Ambient Gradient -->
+<div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#1c1c1c] to-transparent opacity-80"></div>
+</div>
+<!-- Main Content Container -->
+<div class="relative z-10 flex flex-col h-full min-h-screen">
+<!-- Header -->
+<header class="flex items-center justify-between p-6 pt-8 pb-2">
+<button class="flex items-center justify-center text-white/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="text-white text-xl font-bold tracking-[0.2em] uppercase leading-none">SHOURAV A.I.</h1>
+<div class="flex gap-1 mt-1">
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+<div class="w-1 h-1 bg-primary/50 rounded-full"></div>
+<div class="w-1 h-1 bg-primary/20 rounded-full"></div>
+</div>
+</div>
+<button class="flex items-center justify-center text-white/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">settings</span>
+</button>
+</header>
+<!-- Subheader -->
+<div class="px-6 py-4 text-center">
+<h2 class="text-white/80 text-sm font-medium tracking-widest uppercase border-b border-white/10 pb-4 inline-block">Select Persona Profile</h2>
+</div>
+<!-- Active Persona Card (Featured) -->
+<div class="px-6 py-2 @container">
+<!-- Chrome Rim Wrapper -->
+<div class="relative p-[2px] rounded-2xl bg-chrome-border shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)]">
+<!-- Metallic Highlight Sweep Animation Simulation -->
+<div class="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
+<div class="w-full h-full bg-active-sweep opacity-50 blur-xl"></div>
+</div>
+<!-- Inner Card Content -->
+<div class="relative bg-[#1a1a1a] rounded-2xl overflow-hidden flex flex-col shadow-inner-depth">
+<!-- Background Texture (Leather grain simulation via noise) -->
+<div class="absolute inset-0 opacity-40 mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-BNWkmsjt3NdW6cGgG02U4DlXle5rKJQ_rJ4bNrqv6dGBQTNctzeF75f3jaJJTox13RmRG_ibUt2Yt06gluARDMABmkBC-VEkMccatq2uvWD7IEXHlqXh-triFKR6nE8ERH2PQV4s4gVETxYTBhp7p-IBs9GgUvoEsh11-0t_VaJF60H5HsN_GL1aJJXbuvikVtu3qZh1kPuYbPPDptz-87Ncmm2rhVkwG53uE5zZ_UQv6nBgStEBHOMDaRNmpOq73H7OxS6uf5E');"></div>
+<!-- Visualizer Area -->
+<div class="h-48 w-full relative flex items-center justify-center bg-black/50 border-b border-white/5">
+<div class="absolute inset-0 bg-[url('https://placeholder.pics/svg/300')] bg-cover bg-center opacity-30 mix-blend-luminosity" data-alt="Abstract digital waveform visualization in amber"></div>
+<!-- Active Pulse Overlay -->
+<div class="relative w-24 h-24 rounded-full border border-primary/30 flex items-center justify-center animate-pulse">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/50 shadow-glow">
+<span class="material-symbols-outlined text-primary text-4xl">graphic_eq</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-4 flex gap-2">
+<div class="w-1 h-1 bg-primary rounded-full animate-bounce"></div>
+<div class="w-1 h-1 bg-primary rounded-full animate-bounce delay-75"></div>
+<div class="w-1 h-1 bg-primary rounded-full animate-bounce delay-150"></div>
+</div>
+</div>
+<!-- Card Details -->
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-white text-2xl font-bold uppercase tracking-tight">The Executive</h3>
+<p class="text-primary text-xs font-bold tracking-widest mt-1">ACTIVE PROFILE</p>
+</div>
+<span class="material-symbols-outlined text-white/20 text-4xl">verified_user</span>
+</div>
+<p class="text-white/60 text-sm leading-relaxed mb-6 font-light">
+                            Concise, professional, data-driven. Responses are optimized for efficiency and clarity.
+                        </p>
+<!-- Audio Preview Button (Mock) -->
+<button class="w-full h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-between px-4 hover:bg-white/10 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-black flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</div>
+<span class="text-white text-sm font-medium tracking-wide">PREVIEW VOICE</span>
+</div>
+<!-- Mock Waveform -->
+<div class="flex gap-[2px] items-center h-4">
+<div class="w-[2px] h-2 bg-white/30 group-hover:bg-primary transition-colors"></div>
+<div class="w-[2px] h-4 bg-white/50 group-hover:bg-primary transition-colors"></div>
+<div class="w-[2px] h-3 bg-white/30 group-hover:bg-primary transition-colors"></div>
+<div class="w-[2px] h-2 bg-white/30 group-hover:bg-primary transition-colors"></div>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inactive Personas Carousel -->
+<div class="mt-6 mb-2 pl-6 overflow-hidden">
+<h4 class="text-white/40 text-xs font-bold uppercase tracking-widest mb-3">Available Profiles</h4>
+<div class="flex overflow-x-auto no-scrollbar gap-4 pr-6 pb-4 snap-x">
+<!-- Card 2 -->
+<div class="min-w-[160px] snap-start group cursor-pointer">
+<div class="h-full rounded-xl bg-[#1e1e1e] border border-white/10 p-3 flex flex-col gap-3 hover:border-white/30 transition-colors">
+<div class="aspect-square rounded-lg bg-black/40 relative overflow-hidden flex items-center justify-center border border-white/5">
+<div class="absolute inset-0 opacity-50 bg-cover bg-center grayscale" data-alt="Abstract geometric shapes representing creativity" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbDwdMya-cJGR8aQKd4t0xqiF4iiyTq4OgYoTQKPeJq3hIQUjpf_GZ3CqjxDBqYjeuyd3JZLHqR-GNrK1fU1AOFI-o24M1nPtBXFVs1zB3vFOBQql0BMS95qjQQnalR2TIKE92Hgz5umW9zQEhjbz-wIZplEZPULCuiwEhHFkhXCxRwrk4t952ol3vT-BsMXJvlZZumQZapzc_utc31VcUDkU6cmK_KnpuqI3WYkVmPYA7FsOc9cZMgX7-VWwpBolPxPW1sALDfqc');"></div>
+<span class="material-symbols-outlined text-white/40 text-3xl z-10">palette</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">The Creative</p>
+<p class="text-white/40 text-xs">Imaginative &amp; abstract</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[160px] snap-start group cursor-pointer">
+<div class="h-full rounded-xl bg-[#1e1e1e] border border-white/10 p-3 flex flex-col gap-3 hover:border-white/30 transition-colors">
+<div class="aspect-square rounded-lg bg-black/40 relative overflow-hidden flex items-center justify-center border border-white/5">
+<div class="absolute inset-0 opacity-50 bg-cover bg-center grayscale" data-alt="Minimalist architectural lines" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyL-7A2NJmHZNC0kXXgCFFCOgbvXWqWmYV_Jai2l2ioPQPW1gSKbMaZ9H7LeWKxj3H0KxyWZyEhxCxnoaLcPnT1Bvqek_5TsMag-k0NxJZezUPXOIp03TzMqPDBBoRdOV4vh2DHyd0F__IH2daV_zPOt1yQpVLyleWjY28re9zGZi79R9kLytuEnvB8zZg4MrSkh1D9M40bM4S-BmwUZBXzwybxUV1kk_hg0CMVjoi2X_4JF13a-tU_2GDFQhtNYkKF8sxLVz6vQE');"></div>
+<span class="material-symbols-outlined text-white/40 text-3xl z-10">spa</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">The Stoic</p>
+<p class="text-white/40 text-xs">Calm &amp; minimalist</p>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="min-w-[160px] snap-start group cursor-pointer">
+<div class="h-full rounded-xl bg-[#1e1e1e] border border-white/10 p-3 flex flex-col gap-3 hover:border-white/30 transition-colors">
+<div class="aspect-square rounded-lg bg-black/40 relative overflow-hidden flex items-center justify-center border border-white/5">
+<div class="absolute inset-0 opacity-50 bg-cover bg-center grayscale" data-alt="Compass and map abstract overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1TOGh5_9QxP_Hx9d1WVRb2xJfi9sCsiffPBoGnPEAFskIPlV54CHnY6B2owhVzphjpwpgZBlUN5R1yEqLGN7K7XMx_vUoGk7hKYw0X0KGdbKuWc9baVPksVqljmXIXHRpMecJFJ1l5c_lCvxd4waSkYERJ0u_KUcV16zoTa0GDqhwefnB13YiHOFjE2hfqP-G2SafCRH4011cDIvVsdck9s1lD2AelXa7te9PKvR4R4jbG0-GY3t_4bW_dMSvddP1xY_99qqNngc');"></div>
+<span class="material-symbols-outlined text-white/40 text-3xl z-10">explore</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">The Navigator</p>
+<p class="text-white/40 text-xs">Direct &amp; precise</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mood / Sliders Section -->
+<div class="flex-1 px-6 pb-24 flex flex-col justify-end">
+<!-- Divider -->
+<div class="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-6"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-white text-sm font-medium uppercase tracking-wider">Warmth Level</span>
+<span class="text-primary text-lg font-bold font-mono">75%</span>
+</div>
+<!-- Custom Industrial Slider -->
+<div class="relative h-12 w-full flex items-center">
+<!-- Track -->
+<div class="absolute w-full h-2 bg-[#111] rounded-full border border-white/10 shadow-inner overflow-hidden">
+<!-- Progress with Scanlines -->
+<div class="h-full w-[75%] bg-white/10 relative">
+<div class="absolute inset-0 scanline opacity-50"></div>
+</div>
+</div>
+<!-- Ticks -->
+<div class="absolute w-full flex justify-between px-1 pointer-events-none opacity-30">
+<div class="w-[1px] h-4 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-4 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-2 bg-white"></div>
+<div class="w-[1px] h-4 bg-white"></div>
+</div>
+<!-- Knob -->
+<div class="absolute left-[75%] -translate-x-1/2 w-8 h-8 rounded-full bg-[#1a1a1a] border-2 border-white/80 shadow-[0_0_15px_rgba(255,255,255,0.2)] flex items-center justify-center z-10 cursor-pointer">
+<div class="w-2 h-2 rounded-full bg-primary shadow-glow"></div>
+</div>
+</div>
+<p class="text-center text-white/30 text-xs mt-2 italic font-light">"Hello, I am ready to drive."</p>
+</div>
+<!-- Start Engine Button (Bottom Bar) -->
+<div class="fixed bottom-6 left-6 right-6 z-20">
+<button class="w-full relative group">
+<!-- Glow Effect -->
+<div class="absolute -inset-1 bg-primary rounded-full blur opacity-20 group-hover:opacity-40 transition duration-200"></div>
+<!-- Button Body -->
+<div class="relative h-16 bg-[#1a1a1a] rounded-full border border-white/20 flex items-center justify-between px-2 shadow-xl overflow-hidden">
+<!-- Metallic Sheen on button -->
+<div class="absolute inset-0 bg-metallic-sheen pointer-events-none"></div>
+<!-- Swipe indicator -->
+<div class="w-12 h-12 rounded-full bg-[#2a2a2a] flex items-center justify-center border border-white/10 z-10 group-active:translate-x-60 transition-transform duration-500 ease-in-out">
+<span class="material-symbols-outlined text-primary">chevron_right</span>
+</div>
+<span class="flex-1 text-center text-white font-bold tracking-[0.2em] text-sm uppercase z-10 group-hover:text-primary transition-colors">
+                        Initialize Engine
+                    </span>
+<div class="w-12 h-12 flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-white/20">power_settings_new</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+</body></html>

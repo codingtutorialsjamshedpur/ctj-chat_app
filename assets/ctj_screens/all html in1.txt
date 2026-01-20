@@ -1,0 +1,1165 @@
+Splash_Screen:
+
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CTJ AI Splash Screen - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(255,85,0,0.15) 1px, transparent 1px);
+            background-size: 6px 6px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white items-center justify-center">
+<div class="cosmic-blob bg-purple-600 w-[500px] h-[500px] top-[-10%] left-[-20%] animate-pulse-slow"></div>
+<div class="cosmic-blob bg-secondary-orange w-[400px] h-[400px] bottom-[10%] right-[-10%] opacity-20 animate-pulse-slow delay-1000"></div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full w-full gap-16">
+<div class="relative animate-float">
+<div class="absolute inset-0 bg-primary/20 blur-[60px] rounded-full transform scale-150"></div>
+<div class="relative flex flex-col items-center justify-center w-80 h-80 rounded-full border border-white/10 glass-card shadow-[0_0_50px_rgba(13,204,242,0.15)] bg-black/20 backdrop-blur-xl">
+<div class="flex gap-16 mb-10">
+<div class="w-7 h-20 bg-primary rounded-full shadow-[0_0_25px_rgba(13,204,242,0.8)]"></div>
+<div class="w-7 h-20 bg-primary rounded-full shadow-[0_0_25px_rgba(13,204,242,0.8)]"></div>
+</div>
+<svg class="drop-shadow-[0_0_15px_rgba(13,204,242,0.8)]" height="80" viewBox="0 0 140 70" width="140">
+<path d="M10,10 Q70,70 130,10" fill="none" stroke="#0dccf2" stroke-linecap="round" stroke-width="10"></path>
+</svg>
+</div>
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-4 h-4 rounded-full bg-secondary-orange shadow-[0_0_10px_#ff5500]"></div>
+<div class="absolute bottom-10 -left-6 w-2 h-2 rounded-full bg-white/50"></div>
+</div>
+<div class="flex flex-col items-center gap-6">
+<h1 class="text-white tracking-tight text-[64px] font-bold leading-none uppercase drop-shadow-2xl">
+                    CTJ AI
+                </h1>
+Splash_Screen:
+
+<div class="flex items-center gap-3 px-6 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+<div class="w-2 h-2 rounded-full bg-secondary-orange animate-pulse"></div>
+<span class="text-white/60 text-sm font-mono tracking-[0.2em] uppercase">Initializing Core</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-32 nothing-dot-bg opacity-30 z-0 mask-image-gradient"></div>
+<div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-32 h-1 rounded-full bg-white/10">
+<div class="h-full w-1/3 bg-secondary-orange/50 rounded-full animate-[loading_2s_ease-in-out_infinite]"></div>
+</div>
+</div>
+<style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); width: 10%; }
+            50% { width: 50%; }
+            100% { transform: translateX(300%); width: 10%; }
+        }
+        .mask-image-gradient {
+            -webkit-mask-image: linear-gradient(to top, black, transparent);
+            mask-image: linear-gradient(to top, black, transparent);
+        }
+    </style>
+
+</body></html>
+
+Home_screen_before:
+
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CTJ AI Conversation - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 4px 4px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<div class="relative z-10 flex flex-col h-full px-5 pt-8 pb-6 justify-between">
+<div class="flex flex-col gap-4 shrink-0">
+<div class="flex justify-between items-center">
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight uppercase">SHOURAV</h1>
+<div class="flex gap-1 bg-white/5 rounded-full p-1 backdrop-blur-sm">
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex justify-start">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-secondary-orange/30 bg-secondary-orange/10 pl-4 pr-4 backdrop-blur-md">
+<span class="text-secondary-orange text-sm font-bold leading-normal tracking-wide">28°C HAZE | AQI 150</span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-4 py-6 overflow-y-auto no-scrollbar mask-image-gradient">
+<div class="flex justify-center my-2">
+<span class="text-white/30 text-xs font-mono tracking-widest uppercase">Today</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-5 shadow-lg">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                            "नमस्ते! मैं ऑनलाइन हूँ. आज आप क्या करना चाहेंगे?"
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] ml-2 mt-1 font-mono">10:42 AM</span>
+</div>
+<div class="flex flex-col items-end max-w-[85%] self-end animate-[fadeIn_0.5s_ease-out_0.1s_both]">
+<div class="glass-card bg-white/10 rounded-2xl rounded-tr-sm p-5 shadow-lg border-white/20">
+<p class="text-white text-lg font-medium leading-relaxed">
+                            Play the 'Cosmic Vibes' playlist.
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] mr-2 mt-1 font-mono">10:43 AM</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out_0.2s_both]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-5 shadow-lg flex flex-col gap-3">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                            Playing 'Cosmic Vibes' on Spotify.
+                        </p>
+<div class="flex items-center gap-3 bg-black/20 rounded-xl p-3 border border-white/5">
+<div class="w-10 h-10 rounded-lg bg-secondary-orange flex items-center justify-center text-black">
+<span class="material-symbols-outlined">music_note</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold">Starlight Echoes</span>
+<span class="text-xs text-white/50">Lo-Fi • 3:42</span>
+</div>
+<div class="ml-auto">
+<div class="flex gap-1 items-end h-4">
+<div class="w-1 h-2 bg-primary animate-pulse"></div>
+<div class="w-1 h-4 bg-primary animate-pulse delay-75"></div>
+<div class="w-1 h-3 bg-primary animate-pulse delay-150"></div>
+</div>
+</div>
+</div>
+</div>
+<span class="text-white/30 text-[10px] ml-2 mt-1 font-mono">10:43 AM</span>
+</div>
+<div class="flex flex-col items-end max-w-[85%] self-end animate-[fadeIn_0.5s_ease-out_0.3s_both]">
+<div class="glass-card bg-white/10 rounded-2xl rounded-tr-sm p-5 shadow-lg border-white/20">
+<p class="text-white text-lg font-medium leading-relaxed">
+                            Also, turn on the studio lights.
+                        </p>
+</div>
+<span class="text-white/30 text-[10px] mr-2 mt-1 font-mono">10:44 AM</span>
+</div>
+<div class="flex flex-col items-start max-w-[85%] self-start animate-[fadeIn_0.5s_ease-out_0.4s_both]">
+<div class="glass-card rounded-2xl rounded-tl-sm p-4 shadow-lg">
+<div class="flex items-center gap-3">
+<div class="flex gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce delay-100"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-orange animate-bounce delay-200"></span>
+</div>
+<span class="text-white/50 text-sm font-mono uppercase tracking-wider">Processing...</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full shrink-0 pt-2">
+<div class="relative flex items-center w-full h-16 rounded-full bg-secondary-orange overflow-hidden nothing-dot-bg shadow-[0_0_40px_rgba(255,85,0,0.3)] transition-transform active:scale-[0.99]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full opacity-0 hover:opacity-100 transition-opacity pointer-events-none"></div>
+<input class="w-full h-full bg-transparent border-none focus:ring-0 text-black placeholder-black/60 px-8 text-lg font-medium font-display" placeholder="Type a message..." type="text"/>
+<button class="absolute right-2 h-12 w-12 flex items-center justify-center bg-black text-secondary-orange rounded-full m-1 hover:scale-105 transition-transform active:scale-95 shadow-md">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
+
+Home_screen_after:
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CTJ AI Home - Idle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom styles for specific requested effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 4px 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<!-- Background Effects -->
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<!-- Main Content Wrapper -->
+<div class="relative z-10 flex flex-col h-full px-5 pt-8 pb-6 justify-between">
+<!-- Header Section -->
+<div class="flex flex-col gap-4">
+<!-- Greeting & Icons Row -->
+<div class="flex justify-between items-center">
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight uppercase">SHOURAV</h1>
+<div class="flex gap-1 bg-white/5 rounded-full p-1 backdrop-blur-sm">
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Weather Chip -->
+<div class="flex justify-start">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-secondary-orange/30 bg-secondary-orange/10 pl-4 pr-4 backdrop-blur-md">
+<span class="text-secondary-orange text-sm font-bold leading-normal tracking-wide">28°C HAZE | AQI 150</span>
+</div>
+</div>
+</div>
+<!-- Central Interaction Area -->
+<div class="flex-1 flex flex-col items-center justify-center gap-8 py-4">
+<!-- Avatar Face -->
+<div class="relative flex flex-col items-center justify-center w-64 h-64">
+<!-- Eyes -->
+<div class="flex gap-12 mb-8">
+<div class="w-5 h-16 bg-primary rounded-full shadow-[0_0_20px_rgba(13,204,242,0.6)]"></div>
+<div class="w-5 h-16 bg-primary rounded-full shadow-[0_0_20px_rgba(13,204,242,0.6)]"></div>
+</div>
+<!-- Mouth (Smile) -->
+<svg class="drop-shadow-[0_0_10px_rgba(13,204,242,0.6)]" height="60" viewbox="0 0 120 60" width="120">
+<path d="M10,10 Q60,60 110,10" fill="none" stroke="#0dccf2" stroke-linecap="round" stroke-width="8"></path>
+</svg>
+<!-- STOP Button (Integrated) -->
+<div class="absolute -bottom-6">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-red-600 hover:bg-red-500 text-white text-sm font-bold tracking-widest shadow-lg shadow-red-900/50 transition-all">
+                            STOP
+                        </button>
+</div>
+</div>
+<!-- Glassmorphic Hindi Card -->
+<div class="glass-card w-full max-w-sm rounded-2xl p-6 text-center mt-4">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                        "नमस्ते, मैं आपकी कैसे मदद कर सकता हूँ?"
+                    </p>
+<p class="text-white/40 text-xs mt-2 font-mono tracking-widest uppercase">System Ready</p>
+</div>
+</div>
+<!-- Bottom Input Bar -->
+<div class="w-full">
+<div class="relative flex items-center w-full h-16 rounded-full bg-secondary-orange overflow-hidden nothing-dot-bg shadow-[0_0_40px_rgba(255,85,0,0.3)]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full opacity-0 hover:opacity-100 transition-opacity pointer-events-none"></div>
+<input class="w-full h-full bg-transparent border-none focus:ring-0 text-black placeholder-black/60 px-8 text-lg font-medium font-display" placeholder="Ask anything..." type="text"/>
+<button class="absolute right-2 h-12 w-12 flex items-center justify-center bg-black text-secondary-orange rounded-full m-1 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
+
+voice_games_arcade:
+
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voice Games Arcade - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 4px 4px;
+        }
+        .modal-sheet {
+            box-shadow: 0 -10px 60px -10px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<div class="relative z-10 flex flex-col h-full px-5 pt-8 pb-6 justify-between transition-all duration-300 blur-[2px] opacity-60 pointer-events-none">
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight uppercase">SHOURAV</h1>
+<div class="flex gap-1 bg-white/5 rounded-full p-1 backdrop-blur-sm">
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex justify-start">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-secondary-orange/30 bg-secondary-orange/10 pl-4 pr-4 backdrop-blur-md">
+<span class="text-secondary-orange text-sm font-bold leading-normal tracking-wide">28°C HAZE | AQI 150</span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center gap-8 py-4">
+<div class="relative flex flex-col items-center justify-center w-64 h-64">
+<div class="flex gap-12 mb-8">
+<div class="w-5 h-16 bg-primary rounded-full shadow-[0_0_20px_rgba(13,204,242,0.6)]"></div>
+<div class="w-5 h-16 bg-primary rounded-full shadow-[0_0_20px_rgba(13,204,242,0.6)]"></div>
+</div>
+<svg class="drop-shadow-[0_0_10px_rgba(13,204,242,0.6)]" height="60" viewBox="0 0 120 60" width="120">
+<path d="M10,10 Q60,60 110,10" fill="none" stroke="#0dccf2" stroke-linecap="round" stroke-width="8"></path>
+</svg>
+<div class="absolute -bottom-6">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-red-600 hover:bg-red-500 text-white text-sm font-bold tracking-widest shadow-lg shadow-red-900/50 transition-all">
+                                STOP
+                            </button>
+</div>
+</div>
+<div class="glass-card w-full max-w-sm rounded-2xl p-6 text-center mt-4">
+<p class="text-white/90 text-lg font-medium leading-relaxed">
+                            "नमस्ते, मैं आपकी कैसे मदद कर सकता हूँ?"
+                        </p>
+<p class="text-white/40 text-xs mt-2 font-mono tracking-widest uppercase">System Ready</p>
+</div>
+</div>
+<div class="w-full">
+<div class="relative flex items-center w-full h-16 rounded-full bg-secondary-orange overflow-hidden nothing-dot-bg shadow-[0_0_40px_rgba(255,85,0,0.3)]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full opacity-0 hover:opacity-100 transition-opacity pointer-events-none"></div>
+<input class="w-full h-full bg-transparent border-none focus:ring-0 text-black placeholder-black/60 px-8 text-lg font-medium font-display" placeholder="Ask anything..." type="text"/>
+<button class="absolute right-2 h-12 w-12 flex items-center justify-center bg-black text-secondary-orange rounded-full m-1 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+<div class="absolute inset-0 z-20 bg-black/50 backdrop-blur-[2px]"></div>
+<div class="absolute bottom-0 left-0 right-0 z-50 bg-[#142326] modal-sheet rounded-t-[2.5rem] border-t border-white/10 overflow-hidden transform transition-transform duration-300 translate-y-0">
+<div class="w-full flex justify-center pt-4 pb-2">
+<div class="w-12 h-1.5 bg-white/20 rounded-full"></div>
+</div>
+<div class="px-6 pb-8 pt-4 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h2 class="text-white font-display font-bold text-2xl uppercase tracking-wider">Voice Games Arcade</h2>
+<div class="px-2 py-0.5 rounded border border-secondary-orange/30 text-secondary-orange text-[10px] font-mono tracking-widest uppercase bg-secondary-orange/10">Beta</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-card rounded-2xl p-4 flex flex-col gap-10 relative cursor-pointer border-secondary-orange bg-secondary-orange/5 shadow-[0_0_20px_rgba(255,85,0,0.1)] group transition-all duration-300">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-orange flex items-center justify-center text-black">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<div class="w-4 h-4 rounded-full border border-secondary-orange flex items-center justify-center">
+<div class="w-2 h-2 bg-secondary-orange rounded-full"></div>
+</div>
+</div>
+<div>
+<h3 class="text-white font-display font-bold uppercase text-sm tracking-wide leading-none mb-1">Trivia Bot</h3>
+<p class="text-white/50 text-[11px] font-medium tracking-wide">Knowledge Test</p>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-4 flex flex-col gap-10 relative cursor-pointer hover:bg-white/5 transition-all group border border-white/10">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined">stadia_controller</span>
+</div>
+<div class="w-4 h-4 rounded-full border border-white/20"></div>
+</div>
+<div>
+<h3 class="text-white/90 font-display font-bold uppercase text-sm tracking-wide leading-none mb-1">Cosmic Quest</h3>
+<p class="text-white/40 text-[11px] font-medium tracking-wide">Adventure</p>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-4 flex flex-col gap-10 relative cursor-pointer hover:bg-white/5 transition-all group border border-white/10">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined">graphic_eq</span>
+</div>
+<div class="w-4 h-4 rounded-full border border-white/20"></div>
+</div>
+<div>
+<h3 class="text-white/90 font-display font-bold uppercase text-sm tracking-wide leading-none mb-1">Echo Room</h3>
+<p class="text-white/40 text-[11px] font-medium tracking-wide">Voice Puzzle</p>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-4 flex flex-col gap-10 relative cursor-pointer hover:bg-white/5 transition-all group border border-white/10">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined">casino</span>
+</div>
+<div class="w-4 h-4 rounded-full border border-white/20"></div>
+</div>
+<div>
+<h3 class="text-white/90 font-display font-bold uppercase text-sm tracking-wide leading-none mb-1">Lucky Roll</h3>
+<p class="text-white/40 text-[11px] font-medium tracking-wide">Chance</p>
+</div>
+</div>
+</div>
+<button class="w-full h-16 bg-secondary-orange rounded-full nothing-dot-bg flex items-center justify-between px-2 relative overflow-hidden group shadow-[0_0_20px_rgba(255,85,0,0.4)] transition-transform active:scale-[0.98]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+<div class="w-12 h-12"></div> 
+<span class="text-black font-display font-bold text-lg uppercase tracking-[0.2em]">Start Game</span>
+<div class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-secondary-orange shadow-lg">
+<span class="material-symbols-outlined">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="h-6 w-full"></div>
+</div>
+</div>
+</body></html>
+
+voice_studio:
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voice Studio - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(255, 85, 0, 0.3) 1px, transparent 1px);
+            background-size: 6px 6px;
+        }
+        .waveform-bar {
+            width: 8px;
+            background-color: #0dccf2;
+            border-radius: 999px;
+            box-shadow: 0 0 20px rgba(13,204,242,0.8);
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden text-white">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="px-5 pt-8 pb-2 flex justify-between items-center">
+<button class="p-3 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="tracking-widest text-[16px] font-bold leading-tight uppercase text-white/90">Voice Studio</h1>
+<button class="p-3 text-secondary-orange hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[24px]">save</span>
+</button>
+</div>
+<div class="flex-1 flex items-center justify-center w-full px-8 py-4">
+<div class="flex items-center justify-center gap-[8px] h-32 w-full max-w-xs">
+<div class="waveform-bar h-8 opacity-40"></div>
+<div class="waveform-bar h-12 opacity-60"></div>
+<div class="waveform-bar h-16 opacity-80"></div>
+<div class="waveform-bar h-24"></div>
+<div class="waveform-bar h-16"></div>
+<div class="waveform-bar h-32 animate-pulse"></div>
+<div class="waveform-bar h-20"></div>
+<div class="waveform-bar h-28"></div>
+<div class="waveform-bar h-14"></div>
+<div class="waveform-bar h-24"></div>
+<div class="waveform-bar h-12 opacity-80"></div>
+<div class="waveform-bar h-8 opacity-60"></div>
+<div class="waveform-bar h-4 opacity-40"></div>
+</div>
+</div>
+<div class="w-full bg-black/30 backdrop-blur-xl border-t border-white/5 rounded-t-[2.5rem] pb-8 pt-8 px-6 flex flex-col gap-8 shadow-2xl">
+<div>
+<div class="flex justify-between items-center mb-4 px-1">
+<span class="text-xs font-bold text-white/50 uppercase tracking-widest">Voice Model</span>
+<span class="text-xs font-mono text-secondary-orange">CUSTOM</span>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="glass-card aspect-square rounded-2xl flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group border-secondary-orange/50 bg-secondary-orange/10 relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary-orange/20 blur-xl"></div>
+<span class="material-symbols-outlined text-secondary-orange text-[28px] relative z-10">graphic_eq</span>
+<span class="text-[10px] font-bold tracking-wide text-secondary-orange relative z-10">AI</span>
+</button>
+<button class="glass-card aspect-square rounded-2xl flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group">
+<span class="material-symbols-outlined text-white/60 group-hover:text-white transition-colors text-[28px]">smart_toy</span>
+<span class="text-[10px] font-medium tracking-wide text-white/60 group-hover:text-white">ROBOT</span>
+</button>
+<button class="glass-card aspect-square rounded-2xl flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group">
+<span class="material-symbols-outlined text-white/60 group-hover:text-white transition-colors text-[28px]">account_circle</span>
+<span class="text-[10px] font-medium tracking-wide text-white/60 group-hover:text-white">HUMAN</span>
+</button>
+<button class="glass-card aspect-square rounded-2xl flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition-colors group">
+<span class="material-symbols-outlined text-white/60 group-hover:text-white transition-colors text-[28px]">public</span>
+<span class="text-[10px] font-medium tracking-wide text-white/60 group-hover:text-white">ALIEN</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-3 px-1">
+<span class="text-white/80">Pitch</span>
+<span class="text-secondary-orange font-mono">+4 semitones</span>
+</div>
+<div class="relative h-14 w-full bg-black/60 rounded-2xl border border-white/5 flex items-center px-2 overflow-hidden shadow-inner">
+<div class="absolute inset-0 nothing-dot-bg opacity-30 pointer-events-none"></div>
+<div class="relative w-full mx-2 h-1 bg-white/10 rounded-full">
+<div class="absolute h-full bg-secondary-orange/50 rounded-full" style="width: 70%"></div>
+<div class="absolute top-1/2 -translate-y-1/2 -ml-3 cursor-grab active:cursor-grabbing hover:scale-110 transition-transform" style="left: 70%">
+<div class="w-6 h-6 bg-secondary-orange rounded-full shadow-[0_0_15px_rgba(255,85,0,0.5)] border-[3px] border-[#18181b]"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-3 px-1">
+<span class="text-white/80">Speed</span>
+<span class="text-secondary-orange font-mono">1.0x</span>
+</div>
+<div class="relative h-14 w-full bg-black/60 rounded-2xl border border-white/5 flex items-center px-2 overflow-hidden shadow-inner">
+<div class="absolute inset-0 nothing-dot-bg opacity-30 pointer-events-none"></div>
+<div class="relative w-full mx-2 h-1 bg-white/10 rounded-full">
+<div class="absolute h-full bg-secondary-orange/50 rounded-full" style="width: 50%"></div>
+<div class="absolute top-1/2 -translate-y-1/2 -ml-3 cursor-grab active:cursor-grabbing hover:scale-110 transition-transform" style="left: 50%">
+<div class="w-6 h-6 bg-secondary-orange rounded-full shadow-[0_0_15px_rgba(255,85,0,0.5)] border-[3px] border-[#18181b]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-2 pb-4">
+<button class="relative group active:scale-95 transition-transform">
+<div class="absolute inset-0 bg-secondary-orange rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+<div class="relative h-16 w-16 bg-gradient-to-br from-secondary-orange to-[#cc4400] rounded-full flex items-center justify-center shadow-xl border border-white/10">
+<span class="material-symbols-outlined text-white text-[32px]">mic</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
+
+settings:
+
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CTJ AI Settings - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.3) 1px, transparent 1px);
+            background-size: 4px 4px;
+        }.toggle-checkbox:checked + div {
+            background-color: #ff5500;
+            background-image: radial-gradient(rgba(0,0,0,0.4) 1px, transparent 1px);
+            background-size: 3px 3px;
+            border-color: #ff5500;
+        }
+        .toggle-checkbox:checked + div span {
+            transform: translateX(100%);
+            background-color: black;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<div class="cosmic-blob bg-purple-900 w-[500px] h-[500px] top-[-10%] right-[-20%] animate-pulse opacity-40"></div>
+<div class="cosmic-blob bg-secondary-orange w-96 h-96 bottom-[-10%] left-[-20%] opacity-20"></div>
+<div class="relative z-10 flex flex-col h-full px-6 pt-10 pb-8">
+<div class="flex justify-between items-center mb-10">
+<h1 class="text-white tracking-tighter text-[42px] font-bold leading-none uppercase">Settings</h1>
+<button class="w-12 h-12 flex items-center justify-center rounded-full glass-card hover:bg-white/10 transition-colors group">
+<span class="material-symbols-outlined text-white/70 group-hover:text-white transition-colors">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto no-scrollbar flex flex-col gap-8">
+<div class="flex flex-col gap-3">
+<h2 class="text-xs font-bold tracking-[0.2em] text-white/40 uppercase pl-4">Connectivity</h2>
+<div class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 hover:bg-white/5 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bluetooth</span>
+</div>
+<span class="text-lg font-medium tracking-wide">Bluetooth</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-white/40 text-sm uppercase tracking-wider font-mono">On</span>
+<span class="material-symbols-outlined text-white/30 group-hover:text-white transition-colors text-[20px]">chevron_right</span>
+</div>
+</div>
+<div class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 hover:bg-white/5 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+</div>
+<span class="text-lg font-medium tracking-wide">Network</span>
+</div>
+<span class="material-symbols-outlined text-white/30 group-hover:text-white transition-colors text-[20px]">chevron_right</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-xs font-bold tracking-[0.2em] text-white/40 uppercase pl-4">Interface</h2>
+<label class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 cursor-pointer select-none">
+<div class="flex items-center gap-4">
+<span class="text-lg font-medium tracking-wide">Always Listening</span>
+</div>
+<div class="relative">
+<input checked="" class="sr-only toggle-checkbox" type="checkbox"/>
+<div class="w-14 h-8 bg-white/10 border border-white/10 rounded-full transition-all duration-300 flex items-center px-1">
+<span class="w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300"></span>
+</div>
+</div>
+</label>
+<label class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 cursor-pointer select-none">
+<div class="flex items-center gap-4">
+<span class="text-lg font-medium tracking-wide">Haptics</span>
+</div>
+<div class="relative">
+<input checked="" class="sr-only toggle-checkbox" type="checkbox"/>
+<div class="w-14 h-8 bg-white/10 border border-white/10 rounded-full transition-all duration-300 flex items-center px-1">
+<span class="w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300"></span>
+</div>
+</div>
+</label>
+<label class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 cursor-pointer select-none">
+<div class="flex items-center gap-4">
+<span class="text-lg font-medium tracking-wide">Glyph Interface</span>
+</div>
+<div class="relative">
+<input class="sr-only toggle-checkbox" type="checkbox"/>
+<div class="w-14 h-8 bg-white/10 border border-white/10 rounded-full transition-all duration-300 flex items-center px-1">
+<span class="w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300"></span>
+</div>
+</div>
+</label>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-xs font-bold tracking-[0.2em] text-white/40 uppercase pl-4">System</h2>
+<div class="glass-card w-full h-[72px] rounded-full flex items-center justify-between px-6 hover:bg-white/5 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="text-lg font-medium tracking-wide">Language</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-secondary-orange text-sm uppercase tracking-wider font-bold">English (US)</span>
+<span class="material-symbols-outlined text-white/30 group-hover:text-white transition-colors text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full h-20 rounded-full bg-secondary-orange text-black nothing-dot-bg border-none flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_30px_rgba(255,85,0,0.3)]">
+<span class="material-symbols-outlined text-[24px]">restart_alt</span>
+<span class="text-lg font-bold tracking-widest uppercase">Restart System</span>
+</button>
+<div class="flex flex-col items-center justify-center gap-1 py-4 opacity-40">
+<p class="text-[10px] font-mono tracking-[0.3em] uppercase">CTJ AI OS 2.1.0</p>
+<p class="text-[10px] font-mono tracking-[0.1em]">ID: 884-X9-COSMIC</p>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
+
+history:
+
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conversation History - Refined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary-orange": "#ff5500", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'dot-pattern': 'radial-gradient(#000 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .cosmic-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .nothing-dot-bg {
+            background-image: radial-gradient(rgba(0,0,0,0.25) 1px, transparent 1px);
+            background-size: 3px 3px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden text-white">
+<div class="cosmic-blob bg-purple-600 w-96 h-96 top-[-10%] left-[-20%] animate-pulse"></div>
+<div class="cosmic-blob bg-secondary-orange w-80 h-80 bottom-[20%] right-[-10%] opacity-30"></div>
+<div class="relative z-10 flex flex-col h-full px-5 pt-8 pb-6 justify-between gap-6">
+<div class="flex flex-col gap-4 shrink-0">
+<div class="flex justify-between items-center">
+<div>
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight uppercase">SHOURAV</h1>
+<p class="text-white/40 text-[10px] font-mono tracking-[0.2em] uppercase mt-1">History Log</p>
+</div>
+<div class="flex gap-1 bg-white/5 rounded-full p-1 backdrop-blur-sm border border-white/5">
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+</button>
+<button class="p-2 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="p-2 text-secondary-orange bg-white/10 transition-colors rounded-full">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto no-scrollbar flex flex-col gap-4 pb-4">
+<div class="flex items-center justify-center gap-4 opacity-30 my-2">
+<div class="h-[1px] bg-white w-12"></div>
+<span class="text-[10px] font-mono uppercase tracking-widest">Today, Oct 24</span>
+<div class="h-[1px] bg-white w-12"></div>
+</div>
+<div class="glass-card w-full rounded-2xl p-5 relative group">
+<div class="flex justify-between items-start mb-3">
+<span class="nothing-dot-bg bg-secondary-orange text-black text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-widest shadow-sm">User</span>
+<span class="text-white/30 text-[10px] font-mono">09:15 AM</span>
+</div>
+<p class="text-white/90 text-lg leading-snug font-medium">
+                        Analyze my sleep data from last night.
+                    </p>
+</div>
+<div class="glass-card w-full rounded-2xl p-5 relative border-l-[3px] border-l-secondary-orange/60">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-2">
+<span class="nothing-dot-bg bg-secondary-orange text-black text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-widest shadow-sm">Assistant</span>
+<span class="text-secondary-orange text-[10px] font-bold tracking-wider opacity-60">AI</span>
+</div>
+<span class="text-white/30 text-[10px] font-mono">09:15 AM</span>
+</div>
+<p class="text-white/80 text-base leading-relaxed font-body">
+                        You slept for <span class="text-white font-bold">6h 42m</span>. Deep sleep was 15% below your average. I recommend a wind-down routine starting at 10:30 PM tonight.
+                    </p>
+<div class="mt-4 flex gap-2">
+<div class="h-1 flex-1 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-orange w-[70%]"></div>
+</div>
+<span class="text-[10px] font-mono text-secondary-orange">70% Quality</span>
+</div>
+</div>
+<div class="glass-card w-full rounded-2xl p-5 relative group">
+<div class="flex justify-between items-start mb-3">
+<span class="nothing-dot-bg bg-secondary-orange text-black text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-widest shadow-sm">User</span>
+<span class="text-white/30 text-[10px] font-mono">10:02 AM</span>
+</div>
+<p class="text-white/90 text-lg leading-snug font-medium">
+                        Set a reminder to buy groceries.
+                    </p>
+</div>
+<div class="glass-card w-full rounded-2xl p-5 relative border-l-[3px] border-l-secondary-orange/60">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-2">
+<span class="nothing-dot-bg bg-secondary-orange text-black text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-widest shadow-sm">Assistant</span>
+</div>
+<span class="text-white/30 text-[10px] font-mono">10:02 AM</span>
+</div>
+<p class="text-white/80 text-base leading-relaxed font-body">
+                        Done. Added to your list. Would you like me to read the current items?
+                    </p>
+<div class="mt-3 flex gap-2">
+<button class="bg-white/5 hover:bg-white/10 border border-white/5 rounded-lg px-3 py-2 flex items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary-orange">shopping_cart</span>
+<span class="text-xs font-medium">View List</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full shrink-0 pt-2">
+<div class="relative flex items-center w-full h-16 rounded-full bg-secondary-orange overflow-hidden nothing-dot-bg shadow-[0_0_40px_rgba(255,85,0,0.3)]">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full opacity-0 hover:opacity-100 transition-opacity pointer-events-none"></div>
+<input class="w-full h-full bg-transparent border-none focus:ring-0 text-black placeholder-black/60 px-8 text-lg font-medium font-display" placeholder="Continue conversation..." type="text"/>
+<button class="absolute right-2 h-12 w-12 flex items-center justify-center bg-black text-secondary-orange rounded-full m-1 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

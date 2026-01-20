@@ -1,0 +1,64 @@
+﻿Analyzing chat_ai...                                            
+
+   info - 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre - lib\main.dart:22:11 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:85:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:87:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:145:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:185:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:209:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\games_arcade_sheet.dart:270:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\history_sheet.dart:189:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\history_sheet.dart:346:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\history_sheet.dart:386:32 - deprecated_member_use
+   info - The variable name '_Header' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\settings_sheet.dart:88:10 - non_constant_identifier_names
+   info - The variable name '_SectionHeader' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\settings_sheet.dart:114:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\settings_sheet.dart:166:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\settings_sheet.dart:254:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:23:29 - deprecated_member_use
+   info - The variable name '_Header' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:51:10 - non_constant_identifier_names
+   info - The variable name '_ControlsPanel' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:89:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:92:29 - deprecated_member_use
+   info - The variable name '_VoiceModelSection' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:113:10 - non_constant_identifier_names
+   info - The variable name '_SlidersSection' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:194:10 - non_constant_identifier_names
+   info - The variable name '_SliderRow' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:222:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:257:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:268:61 - deprecated_member_use
+   info - The variable name '_MicButton' isn't a lowerCamelCase identifier - lib\screens\bottom_sheets\voice_studio_sheet.dart:282:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:299:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:350:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\bottom_sheets\voice_studio_sheet.dart:388:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:109:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:119:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:158:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:188:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:245:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\splash_screen.dart:325:50 - deprecated_member_use
+   info - The variable name '_Header' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:119:10 - non_constant_identifier_names
+   info - The variable name '_WeatherDisplay' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:151:10 - non_constant_identifier_names
+   info - The variable name '_IdleView' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:158:10 - non_constant_identifier_names
+   info - The variable name '_AvatarSection' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:168:10 - non_constant_identifier_names
+   info - The variable name '_Eyes' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:188:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\voice_assistant_page.dart:201:42 - deprecated_member_use
+   info - The variable name '_Mouth' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:212:10 - non_constant_identifier_names
+   info - The variable name '_GreetingCard' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:219:10 - non_constant_identifier_names
+   info - The variable name '_ConversationView' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:256:10 - non_constant_identifier_names
+   info - The variable name '_InputBar' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:271:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\voice_assistant_page.dart:419:37 - deprecated_member_use
+   info - The variable name '_ProcessingContent' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:465:10 - non_constant_identifier_names
+   info - The variable name '_AudioPlayerCard' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:486:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\voice_assistant_page.dart:491:29 - deprecated_member_use
+   info - The variable name '_AudioVisualizer' isn't a lowerCamelCase identifier - lib\screens\voice_assistant_page.dart:541:10 - non_constant_identifier_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\animated_avatar.dart:61:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\animated_avatar.dart:69:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\animated_avatar.dart:76:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\animated_avatar.dart:112:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\animated_avatar.dart:201:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\cosmic_blobs.dart:88:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\nothing_dot_bg.dart:45:26 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\orange_input_bar.dart:35:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\orange_input_bar.dart:59:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\waveform_visualizer.dart:70:24 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\waveform_visualizer.dart:74:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\weather_chip.dart:21:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\weather_chip.dart:23:44 - deprecated_member_use
+

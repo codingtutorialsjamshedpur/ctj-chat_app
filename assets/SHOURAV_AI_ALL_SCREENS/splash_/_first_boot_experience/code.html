@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOURAV A.I. - Splash Screen</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#12100e", // Deep warm black for base
+                        "leather-dark": "#0a0908",
+                        "gold-dim": "#8a6e2f",
+                        "gold-bright": "#d4af37",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    animation: {
+                        'shine-sweep': 'shine 1.4s cubic-bezier(0.2, 0.0, 0.2, 1) forwards',
+                        'breathe': 'breathe 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        shine: {
+                            '0%': { backgroundPosition: '-150% center', opacity: '0.8' },
+                            '100%': { backgroundPosition: '250% center', opacity: '1' },
+                        },
+                        breathe: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>/* Custom Utilities for Leather Texture */
+.bg-leather {
+    background-color: #12100e;
+    background-image: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03) 0%, transparent 60%), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBlCpzyLetn8s6i0hsUgjPnbFk3L3mWu836niHql6sk-leJ9yXH3Rc9RSdNycBYRXsmc5URAeoytABtzqXZXX9JluABLFPA5s3ruUevxHOvL_zMl9KbyCPuXmBsxDPHLMyiT3lwIhVy2Z9QCJE2BV_S_6NMyVxt3ITgooGDC7QujqqTCiykSxOiwiEO8YyBh6SlQsdOzWpoIzEjA1DK1w7N5ZqgQDkRMcht4oRr1vKwpxG4rXfaJiFT_5vobIYTvhOdbThDWbbi7Ro);
+    background-blend-mode: normal, overlay
+    }
+/* Debossed Text Effect */
+.text-deboss {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Gradient simulates the gold foil inlay */
+    background-image: linear-gradient(135deg, #5e4b20 0%, #b8923e 50%, #5e4b20 100%);
+    /* Shadows create the depth: dark inner shadow top-left, light highlight bottom-right */
+    filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.15)) drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.8))
+    }
+/* The Shine Overlay */
+.text-shine {
+    background: linear-gradient(90deg, transparent 20%, rgba(255, 236, 179, 0.8) 50%, transparent 80%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: overlay
+    }
+/* Vignette to focus center */
+.vignette {
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.9) 100%)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark dark text-white h-screen w-full overflow-hidden flex flex-col items-center justify-center m-0 p-0 font-display select-none">
+<!-- 
+      SPLASH SCREEN CONTAINER
+      Role: The physical substrate (Leather Theme Default)
+    -->
+<main class="relative w-full h-full flex flex-col items-center justify-center bg-leather overflow-hidden group">
+<!-- Vignette Layer: Focuses attention on the center -->
+<div class="absolute inset-0 vignette z-10 pointer-events-none"></div>
+<!-- Decorative: Subtle top highlight to suggest material curvature -->
+<div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/5 to-transparent z-10 pointer-events-none"></div>
+<!-- LOGO ASSEMBLY -->
+<div class="relative z-20 flex flex-col items-center justify-center p-8">
+<!-- The Brand Name -->
+<!-- 
+               Technique: We layer the text. 
+               1. Base layer handles the "Gold Foil / Bronze" gradient and debossed shadow.
+               2. Overlay layer handles the "Sweep" animation.
+            -->
+<div class="relative">
+<!-- Base Debossed Layer -->
+<h1 aria-label="SHOURAV A.I." class="text-4xl md:text-6xl font-bold tracking-[0.2em] text-center text-deboss">
+                    SHOURAV A.I.
+                </h1>
+<!-- Animation Layer: The Light Sweep -->
+<!-- Only plays once on load (animate-shine-sweep) -->
+<h1 aria-hidden="true" class="absolute inset-0 text-4xl md:text-6xl font-bold tracking-[0.2em] text-center text-shine animate-shine-sweep">
+                    SHOURAV A.I.
+                </h1>
+</div>
+<!-- Material Texture Detail (Invisible to screen readers, visual cues only) -->
+<!-- Simulates a very subtle pressed indentation area around the logo for realism -->
+<div class="absolute inset-0 -z-10 bg-black/20 blur-xl rounded-full transform scale-y-75 scale-x-110 opacity-60"></div>
+</div>
+<!-- 
+           OPTIONAL: Visual indicator of "Nothing OS" inspiration (Technical info, hidden/subtle) 
+           Positioned extremely low to not interfere with center focus, just as a signature.
+        -->
+<div class="absolute bottom-12 opacity-20 text-[10px] tracking-[0.3em] text-primary font-light uppercase mix-blend-overlay">
+            System Ready
+        </div>
+</main>
+<!-- 
+      Note: No scripts or loading indicators are included as per "No loading indicators or sounds" requirement.
+      The transition to Home would be handled by the native OS/App logic after the animation completes.
+    -->
+</body></html>
